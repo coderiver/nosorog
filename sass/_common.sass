@@ -61,6 +61,8 @@
 		+s(ricato)
 	&.ico_ch-card
 		+s(icon-card)
+	&.ico_delete
+		+s(ico-delete)
 
 // common blocks      
 
@@ -232,6 +234,16 @@
 		.cart_quantity
 			float: left
 			margin-right: 10px
+			.btn.button-plus, .btn.button-minus
+				float: right
+	.product__delete
+		color: #AAA
+		font-size: 14px
+		font-weight: 400
+		display: block
+		.ico
+			margin: 5px 5px 0 0
+			vertical-align: top
 
 // cost
 .cost
@@ -271,9 +283,27 @@
 	font-weight: 400
 	line-height: 30px
 
+// info-bue
+.info-bue
+	position: absolute
+	top: 100%
+	left: 0
+	right: 0
+	height: 15px
+	line-height: 14px
+	background-color: #C8E5F6
+	color: #333
+	font-size: 13px
 
-
-
+.btn.button-prev
+	position: relative
+	&:before
+		position: absolute
+		content: ''
+		top: 50%
+		left: 17px
+		margin-top: -5px
+		+s(button-arr-left)
 
 
 
