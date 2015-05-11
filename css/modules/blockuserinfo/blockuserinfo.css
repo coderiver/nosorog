@@ -1,0 +1,26 @@
+.header_user_info {
+    float: right;
+    padding: 8px 0 0;
+}
+
+.header_user_info span {
+    color: #aaa;
+}
+
+.user-cabinet-links-header {
+
+}
+
+.user-cabinet-links-header li {
+    float: left;
+    margin: 0 19px 0 0;
+    color: #aaa
+}
+
+.user-cabinet-links-header li:last-child {
+    margin: 0;
+}
+
+.user-cabinet-links-header .active a {
+    color: #a5509f;
+}

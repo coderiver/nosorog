@@ -1,19 +1,30 @@
-head.ready(function() {
+$(document).ready(function(){
 
-	// $(document).on("click", function(){
-	// 	$(".js-popup").hide();
-	// });
+	$(window).scroll(function() {
+		var scroll = $(window).scrollTop();
+			height = $('.header__top').height();
+			card = $('.js-ch-card');
+			cardPar = $('.js-ch-card').parent();
+			cardWidth = $('.js-ch-card').width();
+			scrollTopBtn = $('.scroll-top');
 
-	// function scrollFixedElements() {
-	//     var scroll_left = $(this).scrollLeft();
-	//     $(".fixed-element").css({
-	//         left: -scroll_left
-	//     });
-	// }
-	// scrollFixedElements();
-	// $(window).scroll(function(){
-	//     scrollFixedElements()
-	// });
-
-	console.log($('body').html());
+		if (scroll <= height) {
+			cardPar.width('auto');
+			card.removeClass('is-fixed');
+			scrollTopBtn.hide();
+		} else {
+			cardPar.width(cardWidth);
+			card.addClass('is-fixed');
+			scrollTopBtn.show();
+		}
+	});
+	$('.js-slick').slick({
+		dots: false,
+		infinite: true,
+		speed: 200,
+		cssEase: 'linear',
+		adaptiveHeight: true,
+		slidesToShow: 4,
+		slidesToScroll: 1
+	});
 });

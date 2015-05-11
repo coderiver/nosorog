@@ -1,0 +1,39 @@
+.shop-phone {
+    position: relative;
+}
+
+#header .shop-phone {
+    float: right;
+    margin: -4px 0 0 65px;
+    width: 258px;
+}
+
+
+.shop-phone .icon {
+    position: absolute;
+    left: -36px;
+    top: 6px;
+}
+
+.shop-phone .contact-link a {
+    line-height: 24px;
+    color: #2290cf;
+    font-weight: normal;
+}
+
+.shop-phone > a {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+.phones-list {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    margin: 0;
+}
+.phones-list li {
+    line-height: 24px;
+    font-weight: bold;
+}
