@@ -203,6 +203,7 @@ div.selector3 > div.disabled span, div.selector3 > div.disabled.active span {
 /* Radio */
 div.radio {
     position: relative;
+    top: 2px;
     display: inline;
 }
 

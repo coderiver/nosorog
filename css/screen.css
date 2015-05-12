@@ -1,13 +1,13 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:400,400italic");
 .ico { display: inline-block; }
-.ico.ico_logo-small { background: url('../img/icons-s012b7fff38.png') 0 -389px no-repeat; width: 60px; height: 15px; }
-.ico.ico_ricato { background: url('../img/icons-s012b7fff38.png') 0 -498px no-repeat; width: 46px; height: 12px; }
-.ico.ico_ch-card { background: url('../img/icons-s012b7fff38.png') 0 -364px no-repeat; width: 16px; height: 15px; }
-.ico.ico_delete { background: url('../img/icons-s012b7fff38.png') 0 -164px no-repeat; width: 10px; height: 10px; }
-.ico.ico_card { background: url('../img/icons-s012b7fff38.png') 0 -131px no-repeat; width: 24px; height: 23px; }
-.ico.ico_f { background: url('../img/icons-s012b7fff38.png') 0 -184px no-repeat; width: 40px; height: 40px; }
-.ico.ico_vk { background: url('../img/icons-s012b7fff38.png') 0 -286px no-repeat; width: 40px; height: 40px; }
-.ico.ico_user { background: url('../img/icons-s012b7fff38.png') 0 -260px no-repeat; width: 14px; height: 16px; }
+.ico.ico_logo-small { background: url('../img/icons-s25ff529586.png') 0 -389px no-repeat; width: 60px; height: 15px; }
+.ico.ico_ricato { background: url('../img/icons-s25ff529586.png') 0 -498px no-repeat; width: 46px; height: 12px; }
+.ico.ico_ch-card { background: url('../img/icons-s25ff529586.png') 0 -364px no-repeat; width: 16px; height: 15px; }
+.ico.ico_delete { background: url('../img/icons-s25ff529586.png') 0 -164px no-repeat; width: 10px; height: 10px; }
+.ico.ico_card { background: url('../img/icons-s25ff529586.png') 0 -131px no-repeat; width: 24px; height: 23px; }
+.ico.ico_f { background: url('../img/icons-s25ff529586.png') 0 -184px no-repeat; width: 40px; height: 40px; }
+.ico.ico_vk { background: url('../img/icons-s25ff529586.png') 0 -286px no-repeat; width: 40px; height: 40px; }
+.ico.ico_user { background: url('../img/icons-s25ff529586.png') 0 -260px no-repeat; width: 14px; height: 16px; }
 
 .header-top { background: #eeeeee; }
 
@@ -28,7 +28,7 @@
 .shopping_cart .shopping_cart_item { margin-left: 5px; color: #2290cf; font-weight: 700; display: none; }
 .shopping_cart .shopping_card_btn { float: right; width: 40px; height: 40px; line-height: 40px; text-align: center; background-color: #2290cf; border: none; -moz-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15); -webkit-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15); box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15); }
 
-.logo { background: url('../img/icons-s012b7fff38.png') 0 -414px no-repeat; width: 255px; height: 74px; }
+.logo { background: url('../img/icons-s25ff529586.png') 0 -414px no-repeat; width: 255px; height: 74px; }
 
 .stock { margin-bottom: 38px; font-size: 0; }
 .stock .stock__col { margin-left: 20px; width: 490px; vertical-align: top; display: inline-block; *zoom: 1; }
@@ -71,15 +71,15 @@
 .rat { margin-right: 8px; font-size: 0; height: 30px; }
 .rat .rat__item { margin-left: 3px; line-height: 28px; height: 30px; display: inline-block; }
 .rat .rat__item:first-child { margin-left: 0; }
-.rat .rat__star { background: url('../img/icons-s012b7fff38.png') 0 -520px no-repeat; width: 12px; height: 12px; vertical-align: middle; display: inline-block; }
-.rat .rat__star:hover, .rat .rat__star.is-active { background: url('../img/icons-s012b7fff38.png') 0 -542px no-repeat; width: 12px; height: 12px; }
+.rat .rat__star { background: url('../img/icons-s25ff529586.png') 0 -520px no-repeat; width: 12px; height: 12px; vertical-align: middle; display: inline-block; }
+.rat .rat__star:hover, .rat .rat__star.is-active { background: url('../img/icons-s25ff529586.png') 0 -542px no-repeat; width: 12px; height: 12px; }
 
 .recall { color: #1981c4; font-size: 14px; font-weight: 400; line-height: 30px; }
 
 .info-bue { position: absolute; top: 100%; left: 0; right: 0; height: 15px; line-height: 14px; background-color: #c8e5f6; color: #333333; font-size: 13px; }
 
 .btn.button-prev { position: relative; }
-.btn.button-prev:before { position: absolute; content: ""; top: 50%; left: 17px; margin-top: -5px; background: url('../img/icons-s012b7fff38.png') 0 -81px no-repeat; width: 6px; height: 10px; }
+.btn.button-prev:before { position: absolute; content: ""; top: 50%; left: 17px; margin-top: -5px; background: url('../img/icons-s25ff529586.png') 0 -81px no-repeat; width: 6px; height: 10px; }
 
 .availability { margin: 10px 0; color: #333333; font-size: 14px; font-weight: 400; }
 .availability .availability__blue { color: #2290cf; font-weight: 700; }
@@ -117,11 +117,11 @@
 .soc-links .soc-links__row .ico { position: absolute; left: 0; top: 2px; }
 
 .user { position: relative; margin-top: -10px; color: #333333; font-size: 16px; font-weight: 400; vertical-align: top; display: inline-block; }
-.user:hover:before { background: url('../img/icons-s012b7fff38.png') 0 -47px no-repeat; width: 10px; height: 7px; }
+.user:hover:before { background: url('../img/icons-s25ff529586.png') 0 -47px no-repeat; width: 10px; height: 7px; }
 .user:hover .user__drop { display: block; }
-.user:hover .ico { background: url('../img/icons-s012b7fff38.png') 0 -234px no-repeat; width: 14px; height: 16px; }
+.user:hover .ico { background: url('../img/icons-s25ff529586.png') 0 -234px no-repeat; width: 14px; height: 16px; }
 .user:hover .user__name { color: white; background: #bf9f79; -moz-box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.15); -webkit-box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.15); box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.15); }
-.user:before { position: absolute; content: ""; top: 17px; right: 15px; background: url('../img/icons-s012b7fff38.png') 0 -64px no-repeat; width: 10px; height: 7px; }
+.user:before { position: absolute; content: ""; top: 17px; right: 15px; background: url('../img/icons-s25ff529586.png') 0 -64px no-repeat; width: 10px; height: 7px; }
 .user a:hover { color: #bf9f79; }
 .user .user__name { height: 40px; padding: 0 28px 0 15px; line-height: 40px; display: block; }
 .user .user__drop { position: absolute; left: 0; right: 0; top: 100%; padding: 18px 15px 22px; border: 2px solid #bf9f79; background: white; z-index: 10; display: none; }
@@ -137,6 +137,7 @@
 .step:first-child { margin-left: 0; }
 .step.is-active { color: #bf9f79; }
 .step.is-active .step__numb { background: #bf9f79; }
+.step.is-passed { color: #2290cf; }
 .step .step__numb { margin-right: 5px; width: 20px; height: 20px; text-align: center; line-height: 22px; font-size: 14px; color: white; font-weight: 700; background-color: #cbcbcb; vertical-align: top; display: inline-block; }
 
 .edit { padding: 0 20px; background: #eeeeee; }
@@ -147,6 +148,20 @@
 .edit .edit__right { float: right; }
 .edit a.edit__right { color: #2290cf; }
 .edit .edit__all { color: #333333; font-size: 16px; font-weight: 700; }
+
+.method { font-size: 0; vertical-align: top; display: inline-block; }
+.method .method__item { padding: 7px 12px; color: #333333; font-size: 14px; font-weight: 400; line-height: 1; border: 2px solid #e0e2e2; border-left: none; cursor: pointer; display: inline-block; vertical-align: top; }
+.method .method__item:first-child { border-left: 2px solid #e0e2e2; border-right: none; }
+.method .method__item.is-active { color: white; border-color: #bf9f79; border-top-color: #a38767; background: #bf9f79; }
+
+.radiobutton span { font-weight: normal; }
+
+.successfully { margin-top: 100px; text-align: center; }
+.successfully .successfully__in { position: relative; padding: 25px; width: 488px; vertical-align: top; border: 2px solid #e0e2e2; display: inline-block; }
+.successfully .successfully__in:before { position: absolute; content: ""; top: -2px; left: 20px; background: url('../img/icons-s25ff529586.png') 0 -564px no-repeat; width: 50px; height: 72px; }
+.successfully .successfully__in p { margin: 30px 0; }
+
+.back { color: #2290cf; font-weight: 700; }
 
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 
@@ -170,7 +185,7 @@
 .slick-loading .slick-slide { visibility: hidden; }
 .slick-vertical .slick-slide { display: block; height: auto; border: 1px solid transparent; }
 
-.slick-prev, .slick-next { position: absolute; top: 50%; margin-top: -14px; font: 0/0 a; text-shadow: none; color: transparent; height: 50px; border: none; background: none; background: url('../img/icons-s012b7fff38.png') 0 0 no-repeat; width: 21px; height: 37px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20); opacity: 0.2; }
+.slick-prev, .slick-next { position: absolute; top: 50%; margin-top: -14px; font: 0/0 a; text-shadow: none; color: transparent; height: 50px; border: none; background: none; background: url('../img/icons-s25ff529586.png') 0 0 no-repeat; width: 21px; height: 37px; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20); opacity: 0.2; }
 .slick-prev:hover, .slick-next:hover { filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; }
 .slick-prev:focus, .slick-next:focus { outline: none; }
 .slick-prev.slick-disabled, .slick-next.slick-disabled { opacity: 0.2; }

@@ -9033,6 +9033,13 @@ div.star.star_hover {
     margin: -5px 0 0 0;
     background: url(../img/icon/selector-arr.png) 0 0 no-repeat;
 }
+.form-group .form-inf {
+    color: #AAA;
+    font-family: "PT Sans";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.4;
+}
 .form-group div.selector span,
 .form-group-delete .selector span {
     line-height: 30px;
