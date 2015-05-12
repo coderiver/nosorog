@@ -6911,7 +6911,9 @@ ul.footer_links li + li {
 .icon-th-list {
     background-position: -22px 0;
 }
-
+.icon-th-list {
+    background: url(../img/icon/icon-th-list.png) no-repeat 0 0;
+}
 .selected .icon-th-list {
     background: url(../img/icon/icon-grid-type.png) no-repeat 0 0;
 }
@@ -7024,7 +7026,10 @@ ul.footer_links li + li {
     font-size: 14px;
     text-decoration: none;
 }
-
+.content_sortPagiBar .display li a.selected,
+.content_sortPagiBar .display_m li a.selected {
+    color: #2290cf;
+}
 .content_sortPagiBar .display .selected a,
 .content_sortPagiBar .display_m .seleted a {
     color: #2290cf;
