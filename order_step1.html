@@ -773,104 +773,128 @@
                     <span class="navigation_page">Вакансии</span>
                 </div>
                 <!-- /Breadcrumb -->
-            <div class="row">
-                <div class="column  four ">
-                <div class="rte">
-                <h1>Политика возврата товаров</h1>
-                <p>Товар, купленный на сайте Topmall.ua, можно вернуть в течение 14 календарных дней с момента его получения. Возврату подлежит только товар, который не был в употреблении. Наличие фирменной упаковки, неповрежденных бирок и наклеек со штрих-кодами на товарах обязательно! </p>
-                <p>Для того, что бы вернуть товар вам необходимо ознакомится с условиями возврата каждого магазина.</p>
-                <p>Товары, которые не подлежат возврату (согласно Постановлению Кабинета Министров от 19.03.1994 № 172) :</p>
-                <ul><li>высшее образование;</li>
-                <li>опыт операционного обслуживания клиентов от 1 года; знание внутренних процедур и порядков, регламентирующих деятельность групп сервисно-операционного контроля отделений;</li>
-                <li>знание внутренних процедур и порядков, регламентирующих деятельность — — групп сервисно-операционного контроля отделений;</li>
-                <li>аналитические навыки, позитивность, инициативность, нацеленность на знание внутренних процедур и порядков, регламентирующих деятельность групп сервисно-операционного контроля отделений;</li>
-                <li>знание внутренних процедур и порядков, регламентирующих деятельность — групп сервисно-операционного контроля отделений;</li>
-                <li>аналитические навыки, позитивность, инициативность, нацеленность на</li>
-                </ul>
-                <p>Такой товар можно вернуть только в случае обнаружения фабричного брака или несоответствия модели описанию.</p>
+                <div class="row">
+                    <div class="column  four ">
+                        <div class="rte">
+                            <h1>Оформление заказа</h1>
+                            <!-- steps -->
+                            <div class="steps">
+                                <div class="step is-active">
+                                    <div class="step__numb">1</div>
+                                    Контактные данные
+                                </div>
+                                <span class="steps__rarr">&rarr;</span>
+                                <div class="step">
+                                    <div class="step__numb">2</div>
+                                    Способ доставки и оплаты
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- #center_column -->
+               </div><!-- .row -->
+                <div class="row">
+                    <div class="column two"> 
+                        <div class="box">
+                                <form method="post" class="std">
+                                    <fieldset>
+                                        <div class="required form-group">
+                                            <label for="firstname" class="required">
+                                                Имя 
+                                            </label>
+                                            <input class="is_required validate form-control" data-validate="isName" type="text" id="firstname" name="firstname" value="Константин Константинопольский">
+                                        </div>
+                                        <div class="required form-group">
+                                            <label for="email" class="is_required required">
+                                                Город
+                                            </label>
+                                            <select class="form-control" style="width: 338px;">
+                                                <option value="">-</option>
+                                                <option value="1" selected="selected">Киев</option>
+                                                <option value="2">Киев</option>
+                                                <option value="3">Киев</option>
+                                            </select>
+                                        </div>
+                                        <div class="required form-group">
+                                                <label for="email" class="is_required required">
+                                                    Мобильный телефон
+                                                </label>
+                                               <select class="form-control" style="width: 338px;">
+                                                   <option value="">-</option>
+                                                   <option value="1" selected="selected">+38(050)3322131</option>
+                                                   <option value="2">Киев</option>
+                                                   <option value="3">Киев</option>
+                                               </select>
+                                        </div>
+                                        <div class="required form-group">
+                                                <label for="email" class="is_required required">
+                                                    Адрес доставки
+                                                </label>
+                                                <select class="form-control" style="width: 338px;">
+                                                    <option value="">-</option>
+                                                    <option value="1" selected="selected">Добавить другой</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                                <div class="form-group-field">
+                                                    <select class="form-control" style="width: 338px;">
+                                                        <option value="">-</option>
+                                                        <option value="1" selected="selected">Киев</option>
+                                                        <option value="2">Киев</option>
+                                                        <option value="3">Киев</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group-field">
+                                                    <span>ул.</span>
+                                                    <input class="form-control" type="text" style="width: 180px;" value="Воровского">
+                                                    <span style="margin: 0 2px 0 4.5px">дом</span>
+                                                    <input class="form-control" type="text" style="width: 40px;" value="5">
+                                                    <span>кв</span>
+                                                    <input class="form-control" type="text" style="width: 40px;" value="34">
+                                                </div>
+                                        </div>
+                                        <div class="form-buttons">
+                                            <button type="submit" name="submitIdentity" class="btn btn-default button button-blue button-small">
+                                                <span>Далее</span>
+                                            </button>
+                                        </div>
+                                    </fieldset>
+                                </form> <!-- .std -->
+                            </div>
                     </div>
-                <br>
-                </div><!-- #center_column -->
-                                    </div><!-- .row -->
+                    <div class="column two">
+                        <!-- edit -->
+                        <div class="edit">
+                            <div class="edit__row">
+                                <div class="edit__left">3 товара на сумму 250,40 грн.</div>
+                                <a href="#" class="edit__right">Редактировать заказ</a>
+                            </div>
+                            <div class="edit__row">
+                                <div class="edit__all">Итого: 250,50 грн.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div><!-- #columns -->
         </div>
 		<!-- Footer -->
-        <div class="footer-container">
+        <div class="footer-container footer-container_mod">
         	<footer id="footer" class="container">
-        		<div class="row">
-                	<!-- MODULE Block footer -->
-                	<section class=" column one footer-block col-xs-12 col-sm-2" id="block_various_links_footer">
-                		<h4>Rikato</h4>
-                		<ul class="toggle-footer" style="">
-        					<li class="item">
-        						<a href="http://nosorog.dev.stfalcon.com/ru/content/4-about-us" title="О компании">
-        							О компании
-        						</a>
-        					</li>
-        					<li class="item">
-        						<a href="http://nosorog.dev.stfalcon.com/ru/content/6-nashi-preimusshestva" title="Наши преимущества">
-        							Наши преимущества
-        						</a>
-        					</li>
-        					<li class="item">
-        						<a href="http://nosorog.dev.stfalcon.com/ru/content/7-vakansii" title="Вакансии">
-        							Вакансии
-        						</a>
-        					</li>
-        					<li class="item">
-        						<a href="http://nosorog.dev.stfalcon.com/ru/content/8-nashi-druzya" title="Наши друзья">
-        							Наши друзья
-        						</a>
-        					</li>
-        				</ul>
-                    </section>
-                	<!-- /MODULE Block footer -->
-                    <section class="column one footer-block col-xs-12 col-sm-4">
-                        <h4>Помощь</h4>
-                        <div class="block_content toggle-footer" style="">
-                            <ul class="bullet">
-                                <li><a rel="nofollow" title="FAQ" href="http://nosorog.dev.stfalcon.com/ru/content/11-faq">FAQ</a></li>
-                                <li><a rel="nofollow" title="Доставка и возврат" href="http://nosorog.dev.stfalcon.com/ru/content/12-dostavka-i-vozvrat">Доставка и возврат</a></li>
-                                <li><a rel="nofollow" title="Бизнес сотрудничество" href="http://nosorog.dev.stfalcon.com/ru/content/13-biznes-sotrudnichestvo">Бизнес сотрудничество</a></li>
-                            </ul>
-                        </div>
-                    </section>
-                    <div class="column one shop-phone">
-                        <h4>Контакты</h4>
-                        <a href="callto:0971771770">(097) 177-17-70</a>
-                        <a href="callto:0673805875">(067) 380-58-75</a>
-                        <a href="callto:0505181683">(050) 518-16-83</a>
-                        <a href="callto:0631780610">(063) 178-06-10</a>
-                        <a class="contact-link" href="mailto:smile@rikato.com.ua">smile@rikato.com.ua</a>
-                    </div>
+                <div class="row">
+                    <!-- MODULE Block footer -->
+                    
+                    
+                    
+                    
                     <section id="social_block" class="column one">
-                    	<ul>
-                            <!-- bogdosarov add $vk_url -->
-        					<li class="facebook">
-                				<a target="_blank" href="http://www.facebook.com/prestashop">
-                				</a>
-                			</li>
-        					<li class="twitter">
-                				<a target="_blank" href="http://www.twitter.com/prestashop">
-                				</a>
-                			</li>
-        		            <li class="google-plus">
-                        		<a target="_blank" href="https://www.google.com/+prestashop">
-                        		</a>
-                        	</li>
-                            <li class="vk">
-                                <a target="_blank" href="http://vk.com/">
-                                </a>
-                            </li>
-        	           </ul>
+                        
                         <div class="copyright clearfix">
-                            © Интернет-магазин <br>
+                            © Интернет-магазин
                             Rikato 2015
                         </div>
                     </section>
 
                 </div>
-			</footer>
+            </footer>
 		</div>
 	</div>
 </body>

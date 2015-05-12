@@ -130,6 +130,24 @@
 .user .user__row span { color: #999999; }
 .user .ico { margin-right: 10px; vertical-align: middle; }
 
+.steps { margin: 10px 0 23px; }
+.steps .steps__rarr { color: #aaaaaa; display: inline-block; }
+
+.step { margin-left: 8px; vertical-align: top; display: inline-block; }
+.step:first-child { margin-left: 0; }
+.step.is-active { color: #bf9f79; }
+.step.is-active .step__numb { background: #bf9f79; }
+.step .step__numb { margin-right: 5px; width: 20px; height: 20px; text-align: center; line-height: 22px; font-size: 14px; color: white; font-weight: 700; background-color: #cbcbcb; vertical-align: top; display: inline-block; }
+
+.edit { padding: 0 20px; background: #eeeeee; }
+.edit .edit__row { padding: 16px 0; border-top: 2px solid #cbcbcb; *zoom: 1; }
+.edit .edit__row:after { content: " "; display: table; clear: both; }
+.edit .edit__row:first-child { border: none; }
+.edit .edit__left { float: left; }
+.edit .edit__right { float: right; }
+.edit a.edit__right { color: #2290cf; }
+.edit .edit__all { color: #333333; font-size: 16px; font-weight: 700; }
+
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 
 .slick-list { position: relative; overflow: hidden; display: block; margin: 0; padding: 0; }

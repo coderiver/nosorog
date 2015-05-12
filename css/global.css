@@ -7579,7 +7579,9 @@ div.star a:hover {
     border-top: solid 2px #e0e0e0;
     background: #fff;
 }
-
+.footer-container.footer-container_mod {
+    border: none;
+}
 .footer-container .container {
     padding-top: 26px;
     padding-bottom: 100px;
@@ -9020,6 +9022,7 @@ div.star.star_hover {
     font-size: 16px;
     font-weight: 400;
 }
+.form-group .selector:before,
 .form-group-delete .selector:before {
     position: absolute;
     content: '';
@@ -9030,7 +9033,7 @@ div.star.star_hover {
     margin: -5px 0 0 0;
     background: url(../img/icon/selector-arr.png) 0 0 no-repeat;
 }
-
+.form-group div.selector span,
 .form-group-delete .selector span {
     line-height: 30px;
     color: #333;

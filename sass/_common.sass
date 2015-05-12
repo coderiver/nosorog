@@ -483,7 +483,55 @@
 		margin-right: 10px
 		vertical-align: middle
 
+// steps
+.steps
+	margin: 10px 0 23px
+	.steps__rarr
+		color: #aaaaaa
+		display: inline-block
+.step
+	margin-left: 8px
+	vertical-align: top
+	display: inline-block
+	&:first-child
+		margin-left: 0
+	&.is-active
+		color: #BF9F79
+		.step__numb
+			background: #bf9f79
+	.step__numb
+		margin-right: 5px
+		width: 20px
+		height: 20px
+		text-align: center
+		line-height: 22px
+		font-size: 14px
+		color: #fff
+		font-weight: 700
+		background-color: #CBCBCB
+		vertical-align: top
+		display: inline-block
 
+// edit
+.edit
+	padding: 0 20px
+	background: #eeeeee
+	.edit__row
+		padding: 16px 0
+		border-top: 2px solid #cbcbcb
+		+clr
+		&:first-child
+			border: none
+	.edit__left
+		float: left
+	.edit__right
+		float: right
+	a.edit__right
+		color: #2290CF
+	.edit__all
+		color: #333
+		font-size: 16px
+		font-weight: 700
 
 
 
