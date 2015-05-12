@@ -5901,7 +5901,13 @@ p.info-account {
     display: block;
     margin-left: 139px;
 }
-
+.account-info .value a {
+    color: #2290CF;
+    font-weight: 700;
+}
+.account-info .value a:hover {
+    text-decoration: underline;
+}
 .account-info a {
     display: inline-block;
     margin-bottom: 8px;

@@ -1,0 +1,938 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Tamplate</title>
+	<meta name="description" content="Интернет-магазин для оптовых покупателей">
+	<meta name="keywords" content="магазин, prestashop">
+	<meta name="generator" content="PrestaShop">
+	<meta name="robots" content="index,follow">
+	<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0"> 
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<style type="text/css"></style>
+    <link rel="stylesheet" href="css/global.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/responsive-tables.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/uniform.default.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/blocklanguages.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/product_list.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/blockcart.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/blockcategories.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/blockcurrencies.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/blockcontact.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/blocknewsletter.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/jquery.autocomplete.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/blocksearch.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/blockuserinfo.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/homeslider.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/hooks.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/blockwishlist.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/productcomments.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/screen.css" type="text/css" media="all">
+	
+
+    <script type="text/javascript">
+        var CUSTOMIZE_TEXTFIELD = 1;
+        var FancyboxI18nClose = 'Закрыть';
+        var FancyboxI18nNext = 'Далее';
+        var FancyboxI18nPrev = 'Назад';
+        var added_to_wishlist = 'Добавлено в ваш список желаний.';
+        var ajax_allowed = true;
+        var ajaxsearch = true;
+        var baseDir = 'http://nosorog.dev.stfalcon.com/';
+        var baseUri = 'http://nosorog.dev.stfalcon.com/';
+        var blocksearch_type = 'top';
+        var checkoutLink = 'http://nosorog.dev.stfalcon.com/ru/quick-order';
+        var comparator_max_item = 3;
+        var comparedProductsIds = [];
+        var contentOnly = false;
+        var currencyBlank = '1';
+        var currencyFormat = '2';
+        var currencyRate = '1.000000';
+        var currencySign = 'грн';
+        var customizationIdMessage = 'Модификация №';
+        var delete_txt = 'Удалить';
+        var displayList = false;
+        var freeProductTranslation = 'Бесплатно!';
+        var freeShippingTranslation = 'Бесплатная доставка!';
+        var generated_date = 1431174914;
+        var homeslider_loop = 1;
+        var homeslider_pause = 3000;
+        var homeslider_speed = 500;
+        var homeslider_width = 1000;
+        var id_lang = 1;
+        var img_dir = 'http://nosorog.dev.stfalcon.com/themes/nosorog/img/';
+        var instantsearch = false;
+        var isGuest = 0;
+        var isLogged = 0;
+        var loggin_required = 'Вы должны войти на сайт, чтобы управлять списком желаемых покупок.';
+        var max_item = 'Нельзя добавить больше чем 3 товаров для сравнения';
+        var min_item = 'Выберите по крайней мере один товар';
+        var mywishlist_url = 'http://nosorog.dev.stfalcon.com/ru/module/blockwishlist/mywishlist';
+        var page_name = 'index';
+        var priceDisplayMethod = 0;
+        var priceDisplayPrecision = 2;
+        var quickView = true;
+        var removingLinkText = 'удалить товар из корзины';
+        var roundMode = 2;
+        var search_url = 'http://nosorog.dev.stfalcon.com/ru/search';
+        var static_token = '8dd19ab8317ed41afac902deae62691a';
+        var token = 'ad93eca456109322db8072366fe265c2';
+        var txtProducts = 'products';
+        var usingSecureMode = false;
+        var wishlistProductsIds = false;
+    </script>
+
+	<script type="text/javascript" src="js/lib/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/lib/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.easing.js"></script>
+	<script type="text/javascript" src="js/lib/tools.js"></script>
+	<script type="text/javascript" src="js/lib/global.js"></script>
+	<script type="text/javascript" src="js/lib/10-bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/lib/15-jquery.total-storage.min.js"></script>
+	<script type="text/javascript" src="js/lib/15-jquery.uniform-modified.js"></script>
+	<script type="text/javascript" src="js/lib/20-underscore-min.js"></script>
+	<script type="text/javascript" src="js/lib/25-input-pack.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="js/lib/products-comparison.js"></script>
+	<script type="text/javascript" src="js/rikato.js"></script>
+	<script type="text/javascript" src="js/lib/ajax-cart.js"></script>
+	<script type="text/javascript" src="js/lib/cart-summary.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.scrollTo.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.serialScroll.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.typewatch.js"></script>
+	<script type="text/javascript" src="js/lib/treeManagement.js"></script>
+	<script type="text/javascript" src="js/lib/blocknewsletter.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.autocomplete.js"></script>
+	<script type="text/javascript" src="js/lib/blocksearch.js"></script>
+	<script type="text/javascript" src="js/lib/homeslider.js"></script>
+	<script type="text/javascript" src="js/lib/ajax-wishlist.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.validate.js"></script>
+	<script type="text/javascript" src="js/lib/social_auth.js"></script>
+	<script type="text/javascript" src="js/lib/validate.js"></script>
+    <script type="text/javascript" src="js/lib/slick.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+		    
+    <link href="./css/css" rel="stylesheet" type="text/css">
+	<!--[if IE 8]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+    <div id="page">
+        <div class="header-container">
+            <header id="header">
+                <div class="header-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="nav">
+                                <nav>
+                                    <!-- shopping-cart -->
+                                    <div class="shopping-cart-wrapper">
+                                        <div class="shopping_cart js-ch-card">
+                                            <div class="shopping_cart_text">
+                                                Корзина пуста
+                                                <a href="#" class="shopping_cart_item">3 товара</a>
+                                            </div>
+                                            <button class="shopping_card_btn"><i class="ico ico_ch-card"></i></button>
+                                        </div>
+                                        <div class="scroll-top">
+                                            <i class="icon-arrow-top-small"></i>
+                                        </div>
+                                    </div>
+                                    <!-- Block user information module NAV  -->
+                                    <div class="header_user_info">
+                                        <!-- user -->
+                                        <div class="user">
+                                            <a href="#" class="user__name"><i class="ico ico_user"></i>Константин</a>
+                                            <div class="user__drop">
+                                                <div class="user__row"><a href="#">Профиль</a></div>
+                                                <div class="user__row"><a href="#">Избранное <span>3</span></a></div>
+                                                <div class="user__row"><a href="#">Выйти</a></div>
+                                            </div>
+                                        </div>
+                                        <div id="languages-block-top" class="languages-block">
+                                            <a class="active" href="./Оптовый интернет-магазин rikato.com.ua - rikato-com-ua.dev.stfalcon.com_files/Оптовый интернет-магазин rikato.com.ua - rikato-com-ua.dev.stfalcon.com.html" title="Рус">Рус</a>
+                                            /<a href="http://nosorog.dev.stfalcon.com/uk/" title="Укр"> Укр</a>
+                                        </div>
+                                    </div>
+                                    <!-- nav-links -->
+                                    <div class="nav-links">
+                                        <div>
+                                            <a class="link is-active" href="#">
+                                                <div class="link__top"><i class="ico ico_logo-small"></i></div>
+                                                <div class="link__dom link__dom_mod">net.ua</div>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a class="link" href="#">
+                                                <div class="link__top">VunderKniga</div>
+                                                <div class="link__dom">com.ua</div>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a class="link" href="#">
+                                                <div class="link__top"><i class="ico ico_ricato"></i></div>
+                                                <div class="link__dom">com.ua</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="column four">
+                                <div id="header_logo" class="clearfix">
+                                    <a class="logo" href="http://nosorog.dev.stfalcon.com/" title="rikato-com-ua.dev.stfalcon.com">
+                                    </a>
+                                    <div class="header-site-info">
+                                        <div class="info-banners">
+                                            <div class="info-banner">
+                                                <i class="icon icon-car"></i>
+                                                <div class="big">100%</div>
+                                                Доставка товаров по всей Украине
+                                            </div>
+                                        </div>
+                                        <span class="shop-phone">
+                                            <i class="icon icon-tel"></i>
+                                            <ul class="phones-list">
+                                                <li>
+                                                    <a href="callto:0971771770">(097) 177-17-70</a>
+                                                </li>
+                                                <li>
+                                                    <a href="callto:0673805875">(067) 380-58-75</a>
+                                                </li>
+                                                <li>
+                                                    <a href="callto:0505181683">(050) 518-16-83</a>
+                                                </li>
+                                                <li>
+                                                    <a href="callto:0631780610">(063) 178-06-10</a>
+                                                </li>
+                                            </ul>
+                                            <div class="contact-link">
+                                                <a href="#">Заказать обратный звонок</a>
+                                            </div>
+                                        </span>
+                                        <div class="callback-window" style="display: none;">
+                                            <form class="callback-form" action="http://nosorog.dev.stfalcon.com/ru/module/callme/default">
+                                                <h3>Заказать обратный звонок</h3>
+                                                <span class="error error-msg"></span>
+                                                <div class="required form-group">
+                                                    <label for="">Ваше имя и фамилия</label>
+                                                    <input class="form-control " name="name" type="text" value="" required="">
+                                                </div>
+                                                <div class="required form-group">
+                                                    <label for="">Контактный телефон</label>
+                                                    <div class="phone-row">
+                                                        <span>+38</span>
+                                                        <input class="form-control cell-operator" maxlength="3" name="phone1" type="text" required="">
+                                                        <span>-</span>
+                                                        <input class="form-control phone-num" maxlength="8&quot;" name="phone2" type="text" required="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn btn-green button" name="submitCallback" value="Отправить"><span>Заказать звонок</span></button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-blocks">
+                                    <!-- Block categories module -->
+                                    <div class="products-catalog open-category">
+                                        <div class="orrange-bg">Категории</div>
+                                        <div class="products-catalog-list">
+                                            <ul class="list-block">
+                                                <li class="list-item">
+                                                    <a href="#" class="title title_bold">Канцтовары</a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="title">Бумага и изделия из бумаги<span class="icon icon-arrow-right"></span></a>
+                                                    <ul class="list-wrap">
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title title_bold">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А3</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А4</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title title_bold">Цветная бумага</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Цветная бумага А3</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Цветная бумага А4</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Цветная бумага детская</a></li>
+                                                            </ul>
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="img-wrap">
+                                                            <img class="category-img" src="img/bumaga-i-izdeliya-iz-bumagi.jpg" alt="img">
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="title">Принадлежности для письма<span class="icon icon-arrow-right"></span></a>
+                                                    <ul class="list-wrap">
+                                                         <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                         <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="img-wrap">
+                                                            <img class="category-img" src="img/bumaga-i-izdeliya-iz-bumagi.jpg" alt="img">
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="title">Настольные принадлежности<span class="icon icon-arrow-right"></span></a>
+                                                    <ul class="list-wrap">
+                                                         <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                         <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="img-wrap">
+                                                            <img class="category-img" src="img/bumaga-i-izdeliya-iz-bumagi.jpg" alt="img">
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="title">Школа и детское творчество<span class="icon icon-arrow-right"></span></a>
+                                                    <ul class="list-wrap">
+                                                         <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="img-wrap">
+                                                            <img class="category-img" src="img/bumaga-i-izdeliya-iz-bumagi.jpg" alt="img">
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="title">Делопроизводство<span class="icon icon-arrow-right"></span></a>
+                                                    <ul class="list-wrap">
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                         <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="img-wrap">
+                                                            <img class="category-img" src="img/bumaga-i-izdeliya-iz-bumagi.jpg" alt="img">
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <ul class="list-block">
+                                                <li class="list-item">
+                                                    <a href="#" class="title title_bold">Игрушки</a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="title">Мягкие игрушки, куклы<span class="icon icon-arrow-right"></span></a>
+                                                    <ul class="list-wrap">
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                         <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="img-wrap">
+                                                            <img class="category-img" src="img/bumaga-i-izdeliya-iz-bumagi.jpg" alt="img">
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="title">Машинки, техника, оружие<span class="icon icon-arrow-right"></span></a>
+                                                    <ul class="list-wrap">
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                         <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="img-wrap">
+                                                            <img class="category-img" src="img/bumaga-i-izdeliya-iz-bumagi.jpg" alt="img">
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="title">Конструкторы<span class="icon icon-arrow-right"></span></a>
+                                                    <ul class="list-wrap">
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                         <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="img-wrap">
+                                                            <img class="category-img" src="img/bumaga-i-izdeliya-iz-bumagi.jpg" alt="img">
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="title">Развивающие игры<span class="icon icon-arrow-right"></span></a>
+                                                    <ul class="list-wrap">
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                         <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="img-wrap">
+                                                            <img class="category-img" src="img/bumaga-i-izdeliya-iz-bumagi.jpg" alt="img">
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="title">Игрушки для малышей<span class="icon icon-arrow-right"></span></a>
+                                                    <ul class="list-wrap">
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                         <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="img-wrap">
+                                                            <img class="category-img" src="img/bumaga-i-izdeliya-iz-bumagi.jpg" alt="img">
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <ul class="list-block">
+                                                <li class="list-item">
+                                                    <a href="#" class="title title_bold">Книги</a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="title">Научная литературы<span class="icon icon-arrow-right"></span></a>
+                                                    <ul class="list-wrap">
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="img-wrap">
+                                                            <img class="category-img" src="img/bumaga-i-izdeliya-iz-bumagi.jpg" alt="img">
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="title">Детская художественная литература<span class="icon icon-arrow-right"></span></a>
+                                                    <ul class="list-wrap">
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="img-wrap">
+                                                            <img class="category-img" src="img/bumaga-i-izdeliya-iz-bumagi.jpg" alt="img">
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="title">Литература для хобби и творчества<span class="icon icon-arrow-right"></span></a>
+                                                    <ul class="list-wrap">
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="img-wrap">
+                                                            <img class="category-img" src="img/bumaga-i-izdeliya-iz-bumagi.jpg" alt="img">
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="show-all-catalog" href="#">Весь каталог <span class="icon icon-arrow-right"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                        <!-- /Block categories module -->
+                                    <!-- Block search module TOP -->
+                                    <div id="search_block_top" class="clearfix">
+                                        <form id="searchbox" method="get" action="http://nosorog.dev.stfalcon.com/ru/search">
+                                            <input type="hidden" name="controller" value="search">
+                                            <input type="hidden" name="orderby" value="position">
+                                            <input type="hidden" name="orderway" value="desc">
+                                            <input class="search_query form-control" type="text" id="search_query_top" name="search_query" placeholder="Поиск" value="">
+                                            <button type="submit" name="submit_search" class="btn btn-default button-search">
+                                                <span>Поиск</span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="columns-container">
+                        <div id="columns" class="container">
+                                                    
+                                <!-- Breadcrumb -->
+                                <div class="breadcrumb clearfix">
+                                            <a class="back" href="http://rikato.com.ua/ru/order-history">Назад</a>
+                                        <span class="navigation-pipe">|</span>
+                                        <a class="home" href="http://rikato.com.ua/" title="Главная">Главная</a>
+                                            <span class="navigation-pipe">/</span>
+                                                    <span class="navigation_page">Моя учетная запись</span>
+                                            </div>
+                                <!-- /Breadcrumb -->
+                                                                        <div id="slider_row" class="row">
+                                                        <div class="column four">
+                                                            <div id="top_column"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                                                <div id="left_column" class="column one">
+                                <!-- Block myaccount module -->
+                                <div class="myaccount-column">
+                                    <div class="block_content">
+                                        <ul>
+                                            <li>
+                                                <a href="http://rikato.com.ua/ru/identity" title="Моя личная информация">
+                                                    Мои настройки
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://rikato.com.ua/ru/order-history" title="Мои заказы">
+                                                    Мои заказы
+                                                </a>
+                                            </li>
+                                                        
+                                            <li>
+                                                <a href="http://rikato.com.ua/ru/addresses" title="Мои адреса">
+                                                    Мои адреса
+                                                </a>
+                                            </li>
+                                                        <li class="lnk_account-cart">
+                                    <a href="#" title="Корзина" onclick="ajaxCart.refresh(1); return false;">
+                                        Корзина
+                                    </a>
+                                </li><li class="lnk_wishlist ">
+                                    <a href="http://rikato.com.ua/ru/wishlist" title="Мои списки покупок">
+                                        Избранные товары 0
+                                    </a>
+                                </li>
+                                <!-- END : MODULE WishList -->
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- /Block myaccount module -->
+                                </div>
+                                <div id="center_column" class="column  three ">
+                                    
+
+                                <h1 class="page-heading">Мои заказы</h1>
+
+                                <div class="account-info">
+                                    <p>
+                                        <span class="title">10 июля 2014</span> 
+                                        <span class="value"><a href="#">Заказ №3759745</a> (5 товаров на 435 грн.) —  Выполнен</span>
+                                    </p>
+                                    <p>
+                                        <span class="title">10 июля 2014</span> 
+                                        <span class="value"><a href="#">Заказ №3759745</a> (5 товаров на 435 грн.) —  Выполнен</span>
+                                    </p>
+                                    <p>
+                                        <span class="title">10 июля 2014</span> 
+                                        <span class="value"><a href="#">Заказ №3759745</a> (5 товаров на 435 грн.) —  Выполнен</span>
+                                    </p>
+                                    <p>
+                                        <span class="title">10 июля 2014</span> 
+                                        <span class="value"><a href="#">Заказ №3759745</a> (5 товаров на 435 грн.) —  Выполнен</span>
+                                    </p>
+                                    <p>
+                                        <span class="title">10 июля 2014</span> 
+                                        <span class="value"><a href="#">Заказ №3759745</a> (5 товаров на 435 грн.) —  Выполнен</span>
+                                    </p>
+                                    <p>
+                                        <span class="title">10 июля 2014</span> 
+                                        <span class="value"><a href="#">Заказ №3759745</a> (5 товаров на 435 грн.) —  Выполнен</span>
+                                    </p>
+                                </div>
+                                
+                            </div><!-- #center_column -->
+                                                </div><!-- .row -->
+                        </div><!-- #columns -->
+                    </div>
+		<!-- Footer -->
+        <div class="footer-container">
+        	<footer id="footer" class="container">
+        		<div class="row">
+                	<!-- MODULE Block footer -->
+                	<section class=" column one footer-block col-xs-12 col-sm-2" id="block_various_links_footer">
+                		<h4>Rikato</h4>
+                		<ul class="toggle-footer" style="">
+        					<li class="item">
+        						<a href="http://nosorog.dev.stfalcon.com/ru/content/4-about-us" title="О компании">
+        							О компании
+        						</a>
+        					</li>
+        					<li class="item">
+        						<a href="http://nosorog.dev.stfalcon.com/ru/content/6-nashi-preimusshestva" title="Наши преимущества">
+        							Наши преимущества
+        						</a>
+        					</li>
+        					<li class="item">
+        						<a href="http://nosorog.dev.stfalcon.com/ru/content/7-vakansii" title="Вакансии">
+        							Вакансии
+        						</a>
+        					</li>
+        					<li class="item">
+        						<a href="http://nosorog.dev.stfalcon.com/ru/content/8-nashi-druzya" title="Наши друзья">
+        							Наши друзья
+        						</a>
+        					</li>
+        				</ul>
+                    </section>
+                	<!-- /MODULE Block footer -->
+                    <section class="column one footer-block col-xs-12 col-sm-4">
+                        <h4>Помощь</h4>
+                        <div class="block_content toggle-footer" style="">
+                            <ul class="bullet">
+                                <li><a rel="nofollow" title="FAQ" href="http://nosorog.dev.stfalcon.com/ru/content/11-faq">FAQ</a></li>
+                                <li><a rel="nofollow" title="Доставка и возврат" href="http://nosorog.dev.stfalcon.com/ru/content/12-dostavka-i-vozvrat">Доставка и возврат</a></li>
+                                <li><a rel="nofollow" title="Бизнес сотрудничество" href="http://nosorog.dev.stfalcon.com/ru/content/13-biznes-sotrudnichestvo">Бизнес сотрудничество</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <div class="column one shop-phone">
+                        <h4>Контакты</h4>
+                        <a href="callto:0971771770">(097) 177-17-70</a>
+                        <a href="callto:0673805875">(067) 380-58-75</a>
+                        <a href="callto:0505181683">(050) 518-16-83</a>
+                        <a href="callto:0631780610">(063) 178-06-10</a>
+                        <a class="contact-link" href="mailto:smile@rikato.com.ua">smile@rikato.com.ua</a>
+                    </div>
+                    <section id="social_block" class="column one">
+                    	<ul>
+                            <!-- bogdosarov add $vk_url -->
+        					<li class="facebook">
+                				<a target="_blank" href="http://www.facebook.com/prestashop">
+                				</a>
+                			</li>
+        					<li class="twitter">
+                				<a target="_blank" href="http://www.twitter.com/prestashop">
+                				</a>
+                			</li>
+        		            <li class="google-plus">
+                        		<a target="_blank" href="https://www.google.com/+prestashop">
+                        		</a>
+                        	</li>
+                            <li class="vk">
+                                <a target="_blank" href="http://vk.com/">
+                                </a>
+                            </li>
+        	           </ul>
+                        <div class="copyright clearfix">
+                            © Интернет-магазин <br>
+                            Rikato 2015
+                        </div>
+                    </section>
+
+                </div>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>
