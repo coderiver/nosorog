@@ -126,6 +126,7 @@
 }
 
 #new_comment_form .new_comment_form_content {
+    margin-top: 20px;
 }
 
 #new_comment_form .new_comment_form_content .intro_form {

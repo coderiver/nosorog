@@ -797,7 +797,15 @@ Grid
     display: inline;
     margin: 0 0 0 19px;
 }
-
+.column.column_right .product-container {
+    position: relative;
+    margin-top: 20px;
+}
+.column.column_right .product-container .new-box, 
+.column.column_right .product-container .sale-box {
+    top: 0;
+    left: 0;
+}
 .category #center_column {
 }
 
@@ -6537,6 +6545,7 @@ div.btn.button-medium {
 }
 
 .blockpeleproductsrelated {
+    margin-top: 40px;
     margin-bottom: 18px;
     border: solid 2px #e0e2e2;
     padding: 18px 17px 0;
@@ -7774,9 +7783,11 @@ div.star a:hover {
     font-size: 24px;
     margin-bottom: 12px;
 }*/
-
 .rte .show-more-wrap {
     margin-bottom: 34px;
+}
+.show-more-wrap h3 {
+    font-weight: 700;
 }
 .rte .show-more-wrap.show-more-last {
     margin-bottom: 0;
