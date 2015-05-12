@@ -264,6 +264,7 @@
     color: #ffe584;
     font-size: 36px;
     font-weight: bold;
+    line-height: 1;
     margin-bottom: 36px;
     text-align: left;
 }
@@ -338,16 +339,20 @@
 }
 
 #homeslider .description.banner-brown  {
-    background-color: #c6844f;
+    background-color: #bf9f79;
 }
-
+#homeslider .description.banner-yellow {
+    background: #f3cc09;
+}
 #homeslider .description.banner-brown .price {
-    color: #ecd47d;
+    color: #f8d009;
 }
-
+#homeslider .description.banner-yellow .price {
+    color: #2290cf;
+}
 #homeslider .description.banner-brown .add-to-cart ,
 #homeslider .description.banner-brown .btn {
-    color: #c6844f;
+    color: #bf9f79;
 }
 
 #homeslider .description.banner-green  {
@@ -409,5 +414,5 @@
 }
 
 #homeslider .btn {
-    padding: 4px 19px;
+    padding: 6px 19px;
 }

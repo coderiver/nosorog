@@ -35,6 +35,9 @@
 .stock .stock__img img { position: absolute; top: 50%; left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); display: block; }
 .stock .stock__right { float: right; padding: 20px; width: 255px; height: 210px; font-weight: 700; line-height: 179px; background: #ef4052; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .stock .stock__right.is-brown { background-color: #bf9f79; }
+.stock .stock__right.is-yellow { background: #f3cc09; }
+.stock .stock__right.is-yellow .stock__price { color: #2290cf; }
+.stock .stock__right.is-blue { background: #2290cf; }
 .stock .stock__text { line-height: 1.2; vertical-align: middle; display: inline-block; }
 .stock .stock__title { margin-bottom: 12px; color: white; font-size: 20px; line-height: 24px; }
 .stock .stock__price { color: #f8d009; font-size: 20px; line-height: 36px; }
