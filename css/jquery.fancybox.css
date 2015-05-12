@@ -51,6 +51,7 @@
 
 .fancybox-inner {
 	overflow: hidden;
+	max-height: 460px !important;
 }
 
 .fancybox-type-iframe .fancybox-inner {
