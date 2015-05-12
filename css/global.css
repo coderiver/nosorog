@@ -6381,14 +6381,19 @@ div.btn.button-medium {
 
 .price.product-price {
     font-weight: bold;
-    color: #a5a737;
+    color: #333;
     font-size: 24px;
 }
 
 .price.product-price.red {
     color: #d84949;
 }
-
+.price.product-price .product-price-old {
+    color: #AAA;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: line-through;
+}
 .old-price {
     color: #aaa;
     text-decoration: line-through;
@@ -6545,7 +6550,9 @@ div.btn.button-medium {
     font-size: 18px;
     margin-bottom: 17px;
 }
-
+.page-product-box .page-product-heading {
+    margin-bottom: 10px;
+}
 .crosseling-list-wrap .page-product-heading {
     font-size: 18px;
     margin-bottom: 28px;
@@ -7889,8 +7896,8 @@ div.star a:hover {
     overflow: hidden;
     width: 100%;
     font-size: 13px;
-    color: #333;
-    background: #f4f5cf;
+    color: #fff;
+    background: #2290cf;
     text-align: center;
 }
 
@@ -9843,7 +9850,7 @@ div.checker.disabled.checked span, div.checker.disabled.active.checked span {
 }
 
 .small-banner .price {
-    color: #ef4b4c;
+    color: #F8D009;
     font-weight: bold;
     display: inline-block;
 }
@@ -9923,7 +9930,9 @@ div.checker.disabled.checked span, div.checker.disabled.active.checked span {
 .small-banner .small-banner-description.banner-pink {
     background-color: #ea5fa3;
 }
-
+.small-banner.vertical .small-banner-description.banner-brown-2 {
+    background: #bf9f79;
+}
 .small-banner .small-banner-description.banner-pink .price {
     color: #fce018;
 }

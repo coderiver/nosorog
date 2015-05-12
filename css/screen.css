@@ -75,6 +75,9 @@
 .btn.button-prev { position: relative; }
 .btn.button-prev:before { position: absolute; content: ""; top: 50%; left: 17px; margin-top: -5px; background: url('../img/icons-safb81462cf.png') 0 -47px no-repeat; width: 6px; height: 10px; }
 
+.availability { margin: 10px 0; color: #333333; font-size: 14px; font-weight: 400; }
+.availability .availability__blue { color: #2290cf; font-weight: 700; }
+
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 
 .slick-list { position: relative; overflow: hidden; display: block; margin: 0; padding: 0; }

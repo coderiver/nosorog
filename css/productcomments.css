@@ -47,7 +47,7 @@
 
 .comments_advices a {
     font-size: 16px;
-    color: #a5a737;
+    color: #2290CF;
 }
 
 .comments_advices a.reviews {
@@ -159,7 +159,18 @@
 #new_comment_form .form-row {
     margin-bottom: 13px;
 }
-
+#new_comment_form .form-col {
+    margin-left: 20px;
+    width: 340px;
+    vertical-align: top;
+    display: inline-block;
+}
+#new_comment_form .form-col:first-child {
+    margin-left: 0;
+}
+#new_comment_form label span {
+    color: #AAA;
+}
 #new_comment_form input {
     height: 40px;
 }
