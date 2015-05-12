@@ -95,6 +95,15 @@
 .page-heading_card .ico { position: absolute; left: -40px; top: 0; }
 .page-heading_card.page-heading { overflow: inherit; }
 
+.colors { font-size: 0; }
+.colors .color { margin-left: 10px; width: 30px; height: 30px; vertical-align: top; cursor: pointer; display: inline-block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.colors .color:first-child { margin-left: 0; }
+.colors .color.is-white { border: 2px solid #e0e2e2; }
+.colors .color.is-green { background: #bff693; }
+.colors .color.is-yellow { background: #f3f584; }
+.colors .color.is-blue { background: #b5efee; }
+.colors .color.is-pink { background: #ffdbe5; }
+
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 
 .slick-list { position: relative; overflow: hidden; display: block; margin: 0; padding: 0; }

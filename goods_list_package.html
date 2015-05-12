@@ -1,0 +1,2229 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Tamplate</title>
+	<meta name="description" content="Интернет-магазин для оптовых покупателей">
+	<meta name="keywords" content="магазин, prestashop">
+	<meta name="generator" content="PrestaShop">
+	<meta name="robots" content="index,follow">
+	<meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0"> 
+	<meta name="apple-mobile-web-app-capable" content="yes"> 
+	<style type="text/css"></style>
+    
+    <link rel="stylesheet" href="css/global.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/responsive-tables.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/uniform.default.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/product_list.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/category.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/scenes.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/jquery.fancybox-thumbs.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/blocklanguages.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/blockcart.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/blockcategories.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/blockcurrencies.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/jquery.ui.core.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/jquery.ui.slider.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/jquery.ui.theme.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/blocklayered.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/blockcontact.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/blocknewsletter.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/jquery.autocomplete.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/blocksearch.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/blockuserinfo.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/hooks.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/blockwishlist.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/productcomments.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/screen.css" type="text/css" media="all">
+	
+
+    <script type="text/javascript">
+        var CUSTOMIZE_TEXTFIELD = 1;
+        var FancyboxI18nClose = 'Закрыть';
+        var FancyboxI18nNext = 'Далее';
+        var FancyboxI18nPrev = 'Назад';
+        var added_to_wishlist = 'Добавлено в ваш список желаний.';
+        var ajax_allowed = true;
+        var ajaxsearch = true;
+        var baseDir = 'http://nosorog.dev.stfalcon.com/';
+        var baseUri = 'http://nosorog.dev.stfalcon.com/';
+        var blocksearch_type = 'top';
+        var checkoutLink = 'http://nosorog.dev.stfalcon.com/ru/quick-order';
+        var comparator_max_item = 3;
+        var comparedProductsIds = [];
+        var contentOnly = false;
+        var currencyBlank = '1';
+        var currencyFormat = '2';
+        var currencyRate = '1.000000';
+        var currencySign = 'грн';
+        var customizationIdMessage = 'Модификация №';
+        var delete_txt = 'Удалить';
+        var displayList = false;
+        var freeProductTranslation = 'Бесплатно!';
+        var freeShippingTranslation = 'Бесплатная доставка!';
+        var generated_date = 1431174914;
+        var homeslider_loop = 1;
+        var homeslider_pause = 3000;
+        var homeslider_speed = 500;
+        var homeslider_width = 1000;
+        var id_lang = 1;
+        var img_dir = 'http://nosorog.dev.stfalcon.com/themes/nosorog/img/';
+        var instantsearch = false;
+        var isGuest = 0;
+        var isLogged = 0;
+        var loggin_required = 'Вы должны войти на сайт, чтобы управлять списком желаемых покупок.';
+        var max_item = 'Нельзя добавить больше чем 3 товаров для сравнения';
+        var min_item = 'Выберите по крайней мере один товар';
+        var mywishlist_url = 'http://nosorog.dev.stfalcon.com/ru/module/blockwishlist/mywishlist';
+        var page_name = 'index';
+        var priceDisplayMethod = 0;
+        var priceDisplayPrecision = 2;
+        var quickView = true;
+        var removingLinkText = 'удалить товар из корзины';
+        var roundMode = 2;
+        var search_url = 'http://nosorog.dev.stfalcon.com/ru/search';
+        var static_token = '8dd19ab8317ed41afac902deae62691a';
+        var token = 'ad93eca456109322db8072366fe265c2';
+        var txtProducts = 'products';
+        var usingSecureMode = false;
+        var wishlistProductsIds = false;
+    </script>
+
+	<script type="text/javascript" src="js/lib/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/lib/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.easing.js"></script>
+	<script type="text/javascript" src="js/lib/tools.js"></script>
+	<script type="text/javascript" src="js/lib/global.js"></script>
+	<script type="text/javascript" src="js/lib/10-bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/lib/15-jquery.total-storage.min.js"></script>
+	<script type="text/javascript" src="js/lib/15-jquery.uniform-modified.js"></script>
+	<script type="text/javascript" src="js/lib/20-underscore-min.js"></script>
+	<script type="text/javascript" src="js/lib/25-input-pack.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="js/lib/products-comparison.js"></script>
+	<script type="text/javascript" src="js/rikato.js"></script>
+	<script type="text/javascript" src="js/lib/ajax-cart.js"></script>
+	<script type="text/javascript" src="js/lib/cart-summary.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.scrollTo.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.serialScroll.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.typewatch.js"></script>
+	<script type="text/javascript" src="js/lib/treeManagement.js"></script>
+	<script type="text/javascript" src="js/lib/blocknewsletter.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.autocomplete.js"></script>
+	<script type="text/javascript" src="js/lib/blocksearch.js"></script>
+	<script type="text/javascript" src="js/lib/homeslider.js"></script>
+	<script type="text/javascript" src="js/lib/ajax-wishlist.js"></script>
+	<script type="text/javascript" src="js/lib/jquery.validate.js"></script>
+	<script type="text/javascript" src="js/lib/social_auth.js"></script>
+	<script type="text/javascript" src="js/lib/validate.js"></script>
+    <script type="text/javascript" src="js/lib/slick.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+		    
+    <link href="./css/css" rel="stylesheet" type="text/css">
+	<!--[if IE 8]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+    <div id="page">
+        <div class="header-container">
+            <header id="header">
+                <div class="header-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="nav">
+                                <nav>
+                                    <!-- shopping-cart -->
+                                    <div class="shopping-cart-wrapper">
+                                        <div class="shopping_cart js-ch-card">
+                                            <div class="shopping_cart_text">
+                                                Корзина пуста
+                                                <a href="#" class="shopping_cart_item">3 товара</a>
+                                            </div>
+                                            <button class="shopping_card_btn"><i class="ico ico_ch-card"></i></button>
+                                        </div>
+                                        <div class="scroll-top">
+                                            <i class="icon-arrow-top-small"></i>
+                                        </div>
+                                    </div>
+                                    <!-- Block user information module NAV  -->
+                                    <div class="header_user_info">
+                                        <a class="login" href="http://nosorog.dev.stfalcon.com/ru/my-account" rel="http://nosorog.dev.stfalcon.com/ru/authentication?content_only=1&amp;login=1" title="Войти в учетную запись покупателя">
+                                        Вход</a>
+                                        <span>и</span>
+                                        <a class="register" href="http://nosorog.dev.stfalcon.com/ru/my-account" rel="http://nosorog.dev.stfalcon.com/ru/authentication?content_only=1&amp;register=1" title="Войти в учетную запись покупателя">
+                                        Зарегистрация</a>
+                                        <div id="languages-block-top" class="languages-block">
+                                            <a class="active" href="./Оптовый интернет-магазин rikato.com.ua - rikato-com-ua.dev.stfalcon.com_files/Оптовый интернет-магазин rikato.com.ua - rikato-com-ua.dev.stfalcon.com.html" title="Рус">Рус</a>
+                                            /<a href="http://nosorog.dev.stfalcon.com/uk/" title="Укр"> Укр</a>
+                                        </div>
+                                    </div>
+                                    <!-- nav-links -->
+                                    <div class="nav-links">
+                                        <div>
+                                            <a class="link is-active" href="#">
+                                                <div class="link__top"><i class="ico ico_logo-small"></i></div>
+                                                <div class="link__dom link__dom_mod">net.ua</div>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a class="link" href="#">
+                                                <div class="link__top">VunderKniga</div>
+                                                <div class="link__dom">com.ua</div>
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a class="link" href="#">
+                                                <div class="link__top"><i class="ico ico_ricato"></i></div>
+                                                <div class="link__dom">com.ua</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="column four">
+                                <div id="header_logo" class="clearfix">
+                                    <a class="logo" href="http://nosorog.dev.stfalcon.com/" title="rikato-com-ua.dev.stfalcon.com">
+                                    </a>
+                                    <div class="header-site-info">
+                                        <div class="info-banners">
+                                            <div class="info-banner">
+                                                <i class="icon icon-car"></i>
+                                                <div class="big">100%</div>
+                                                Доставка товаров по всей Украине
+                                            </div>
+                                        </div>
+                                        <span class="shop-phone">
+                                            <i class="icon icon-tel"></i>
+                                            <ul class="phones-list">
+                                                <li>
+                                                    <a href="callto:0971771770">(097) 177-17-70</a>
+                                                </li>
+                                                <li>
+                                                    <a href="callto:0673805875">(067) 380-58-75</a>
+                                                </li>
+                                                <li>
+                                                    <a href="callto:0505181683">(050) 518-16-83</a>
+                                                </li>
+                                                <li>
+                                                    <a href="callto:0631780610">(063) 178-06-10</a>
+                                                </li>
+                                            </ul>
+                                            <div class="contact-link">
+                                                <a href="#">Заказать обратный звонок</a>
+                                            </div>
+                                        </span>
+                                        <div class="callback-window" style="display: none;">
+                                            <form class="callback-form" action="http://nosorog.dev.stfalcon.com/ru/module/callme/default">
+                                                <h3>Заказать обратный звонок</h3>
+                                                <span class="error error-msg"></span>
+                                                <div class="required form-group">
+                                                    <label for="">Ваше имя и фамилия</label>
+                                                    <input class="form-control " name="name" type="text" value="" required="">
+                                                </div>
+                                                <div class="required form-group">
+                                                    <label for="">Контактный телефон</label>
+                                                    <div class="phone-row">
+                                                        <span>+38</span>
+                                                        <input class="form-control cell-operator" maxlength="3" name="phone1" type="text" required="">
+                                                        <span>-</span>
+                                                        <input class="form-control phone-num" maxlength="8&quot;" name="phone2" type="text" required="">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn btn-green button" name="submitCallback" value="Отправить"><span>Заказать звонок</span></button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-blocks">
+                                    <!-- Block categories module -->
+                                    <div class="products-catalog open-category">
+                                        <div class="orrange-bg">Категории</div>
+                                        <div class="products-catalog-list">
+                                            <ul class="list-block">
+                                                <li class="list-item">
+                                                    <a href="#" class="title title_bold">Канцтовары</a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="title">Бумага и изделия из бумаги<span class="icon icon-arrow-right"></span></a>
+                                                    <ul class="list-wrap">
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title title_bold">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А3</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А4</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title title_bold">Цветная бумага</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Цветная бумага А3</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Цветная бумага А4</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Цветная бумага детская</a></li>
+                                                            </ul>
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="img-wrap">
+                                                            <img class="category-img" src="img/bumaga-i-izdeliya-iz-bumagi.jpg" alt="img">
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="title">Принадлежности для письма<span class="icon icon-arrow-right"></span></a>
+                                                    <ul class="list-wrap">
+                                                         <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                         <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="img-wrap">
+                                                            <img class="category-img" src="img/bumaga-i-izdeliya-iz-bumagi.jpg" alt="img">
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="title">Настольные принадлежности<span class="icon icon-arrow-right"></span></a>
+                                                    <ul class="list-wrap">
+                                                         <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                         <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="img-wrap">
+                                                            <img class="category-img" src="img/bumaga-i-izdeliya-iz-bumagi.jpg" alt="img">
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="title">Школа и детское творчество<span class="icon icon-arrow-right"></span></a>
+                                                    <ul class="list-wrap">
+                                                         <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="img-wrap">
+                                                            <img class="category-img" src="img/bumaga-i-izdeliya-iz-bumagi.jpg" alt="img">
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="title">Делопроизводство<span class="icon icon-arrow-right"></span></a>
+                                                    <ul class="list-wrap">
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                         <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="img-wrap">
+                                                            <img class="category-img" src="img/bumaga-i-izdeliya-iz-bumagi.jpg" alt="img">
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <ul class="list-block">
+                                                <li class="list-item">
+                                                    <a href="#" class="title title_bold">Игрушки</a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="title">Мягкие игрушки, куклы<span class="icon icon-arrow-right"></span></a>
+                                                    <ul class="list-wrap">
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                         <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="img-wrap">
+                                                            <img class="category-img" src="img/bumaga-i-izdeliya-iz-bumagi.jpg" alt="img">
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="title">Машинки, техника, оружие<span class="icon icon-arrow-right"></span></a>
+                                                    <ul class="list-wrap">
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                         <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="img-wrap">
+                                                            <img class="category-img" src="img/bumaga-i-izdeliya-iz-bumagi.jpg" alt="img">
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="title">Конструкторы<span class="icon icon-arrow-right"></span></a>
+                                                    <ul class="list-wrap">
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                         <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="img-wrap">
+                                                            <img class="category-img" src="img/bumaga-i-izdeliya-iz-bumagi.jpg" alt="img">
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="title">Развивающие игры<span class="icon icon-arrow-right"></span></a>
+                                                    <ul class="list-wrap">
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                         <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="img-wrap">
+                                                            <img class="category-img" src="img/bumaga-i-izdeliya-iz-bumagi.jpg" alt="img">
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="title">Игрушки для малышей<span class="icon icon-arrow-right"></span></a>
+                                                    <ul class="list-wrap">
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                         <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                                <li class="list-item"><a href="#" class="title">Офисная бумага А5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="img-wrap">
+                                                            <img class="category-img" src="img/bumaga-i-izdeliya-iz-bumagi.jpg" alt="img">
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <ul class="list-block">
+                                                <li class="list-item">
+                                                    <a href="#" class="title title_bold">Книги</a>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="title">Научная литературы<span class="icon icon-arrow-right"></span></a>
+                                                    <ul class="list-wrap">
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="img-wrap">
+                                                            <img class="category-img" src="img/bumaga-i-izdeliya-iz-bumagi.jpg" alt="img">
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="title">Детская художественная литература<span class="icon icon-arrow-right"></span></a>
+                                                    <ul class="list-wrap">
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="img-wrap">
+                                                            <img class="category-img" src="img/bumaga-i-izdeliya-iz-bumagi.jpg" alt="img">
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a href="#" class="title">Литература для хобби и творчества<span class="icon icon-arrow-right"></span></a>
+                                                    <ul class="list-wrap">
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="list-item">
+                                                            <ul class="list-wrap">
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                                <li class="list-item"><a href="#" class="title"></a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="img-wrap">
+                                                            <img class="category-img" src="img/bumaga-i-izdeliya-iz-bumagi.jpg" alt="img">
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-item">
+                                                    <a class="show-all-catalog" href="#">Весь каталог <span class="icon icon-arrow-right"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                        <!-- /Block categories module -->
+                                    <!-- Block search module TOP -->
+                                    <div id="search_block_top" class="clearfix">
+                                        <form id="searchbox" method="get" action="http://nosorog.dev.stfalcon.com/ru/search">
+                                            <input type="hidden" name="controller" value="search">
+                                            <input type="hidden" name="orderby" value="position">
+                                            <input type="hidden" name="orderway" value="desc">
+                                            <input class="search_query form-control" type="text" id="search_query_top" name="search_query" placeholder="Поиск" value="">
+                                            <button type="submit" name="submit_search" class="btn btn-default button-search">
+                                                <span>Поиск</span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        
+        <div class="columns-container">
+                        <div id="columns" class="container">
+                                                    
+        <!-- Breadcrumb -->
+        <div class="breadcrumb clearfix">
+                    <a class="back" href="http://rikato.com.ua/ru/745-cvetnaya-bumaga-a4">Назад</a>
+                <span class="navigation-pipe">|</span>
+                <a class="home" href="http://rikato.com.ua/" title="Главная">Главная</a>
+                    <span class="navigation-pipe">/</span>
+                            <a href="http://rikato.com.ua/ru/854-igrushki" title="Игрушки">Игрушки</a><span class="navigation-pipe">/</span><a href="http://rikato.com.ua/ru/857-mashinki-tekhnika-oruzhie" title="Машинки, техника, оружие">Машинки, техника, оружие</a>
+                    </div>
+        <!-- /Breadcrumb -->
+                                                <div id="slider_row" class="row">
+                                <div class="column four">
+                                    <div id="top_column"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                                        <div id="left_column" class="column one">
+        <!-- Block layered navigation module -->
+        <div id="layered_block_left" class="block">
+            <div class="block_content">
+                <form action="#" id="layered_form">
+                    <div class="filter-submit-wr">
+                        <div class="wr">
+                            <p>Найдено товаров: <span class="filter-count"><span></span></span></p>
+                            <button id="filter-submit" class="filter-submit" type="submit">Показать</button>
+                        </div>
+                    </div>
+                    <div>
+                                                                                                                <div class="layered_filter">
+                                                        <div class="layered_subtitle_heading">
+                                    <span class="layered_subtitle">Наличие</span>
+                                    <!--<span class="layered_close">
+                                        <a href="#" rel="ul_layered_quantity_0"></a>
+                                    </span>-->
+                                </div>
+                                <ul id="ul_layered_quantity_0" class="col-lg-12 layered_filter_ul">
+                                                                                                                                                                                                                                                                    <li class="nomargin hiddable col-lg-6 "> 
+                                                                                                    <div class="checker checked" id="uniform-layered_quantity_1"><span><input type="checkbox" class="checkbox" name="layered_quantity_1" id="layered_quantity_1" value="1"></span></div> 
+                                                                                                <label for="layered_quantity_1">
+                                                                                                        <a href="http://rikato.com.ua/ru/872-spectekhnika#nalichie-po_nalichiyu" rel="nofollow">По наличию</a>
+                                                                                                    </label>
+                                                </li>
+                                                                                                                                                                                                    </ul>
+                            </div>
+                                                                                                                    <div class="layered_price" style="">
+                                                        <div class="layered_subtitle_heading">
+                                    <span class="layered_subtitle">Цена</span>
+                                    <!--<span class="layered_close">
+                                        <a href="#" rel="ul_layered_price_0"></a>
+                                    </span>-->
+                                </div>
+                                <ul id="ul_layered_price_0" class="col-lg-12 layered_filter_ul">
+                                                                                                        <span id="layered_price_range"></span>
+                                            <div class="layered_slider_container">
+                                                <div class="layered_slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="layered_price_slider" data-type="price" data-format="2" data-unit="грн" aria-disabled="false"><div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 0%; width: 100%;"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 0%;"></a><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 100%;"></a></div>
+                                            </div>
+                                            <div class="slider-input-bloks">
+                                                <label for="layered_price_range_min_cus">От</label>
+                                                <input id="layered_price_range_min_cus" class="unprocess layered_input_range" type="number" min="">
+                                                <label for="layered_price_range_max_cus">до</label>
+                                                <input id="layered_price_range_max_cus" class="unprocess layered_input_range" type="number" max="">
+                                                <button name="price" id="layered_price_range_send" type="button" class="btn">Ок</button>
+                                            </div>
+                                                                                                                        </ul>
+                            </div>
+                                                                                                                    <div class="layered_filter">
+                                                        <div class="layered_subtitle_heading">
+                                    <span class="layered_subtitle">Возраст ребенка:</span>
+                                    <!--<span class="layered_close">
+                                        <a href="#" rel="ul_layered_id_feature_1"></a>
+                                    </span>-->
+                                </div>
+                                <ul id="ul_layered_id_feature_1" class="col-lg-12 layered_filter_ul">
+                                                                                                                                                                                        <li class="nomargin hiddable col-lg-6 "> 
+                                                                                                    <div class="checker" id="uniform-layered_id_feature_37"><span><input type="checkbox" class="checkbox" name="layered_id_feature_37" id="layered_id_feature_37" value="37_1"></span></div> 
+                                                                                                <label for="layered_id_feature_37">
+                                                                                                        <a href="http://rikato.com.ua/ru/872-spectekhnika#vozrast_rebenka-1">1+</a>
+                                                                                                    </label>
+                                                </li>
+                                                                                                                                                                    <li class="nomargin hiddable col-lg-6 "> 
+                                                                                                    <div class="checker" id="uniform-layered_id_feature_38"><span><input type="checkbox" class="checkbox" name="layered_id_feature_38" id="layered_id_feature_38" value="38_1"></span></div> 
+                                                                                                <label for="layered_id_feature_38">
+                                                                                                        <a href="http://rikato.com.ua/ru/872-spectekhnika#vozrast_rebenka-2">2+</a>
+                                                                                                    </label>
+                                                </li>
+                                                                                                                                                                    <li class="nomargin hiddable col-lg-6 "> 
+                                                                                                    <div class="checker" id="uniform-layered_id_feature_39"><span><input type="checkbox" class="checkbox" name="layered_id_feature_39" id="layered_id_feature_39" value="39_1"></span></div> 
+                                                                                                <label for="layered_id_feature_39">
+                                                                                                        <a href="http://rikato.com.ua/ru/872-spectekhnika#vozrast_rebenka-3">3+</a>
+                                                                                                    </label>
+                                                </li>
+                                                                                                                                                                                                    </ul>
+                            </div>
+                                                                                                                    <div class="layered_filter">
+                                                        <div class="layered_subtitle_heading">
+                                    <span class="layered_subtitle">Материал:</span>
+                                    <!--<span class="layered_close">
+                                        <a href="#" rel="ul_layered_id_feature_4"></a>
+                                    </span>-->
+                                </div>
+                                <ul id="ul_layered_id_feature_4" class="col-lg-12 layered_filter_ul">
+                                                                                                                                                                                        <li class="nomargin hiddable col-lg-6 "> 
+                                                                                                    <div class="checker" id="uniform-layered_id_feature_206"><span><input type="checkbox" class="checkbox" name="layered_id_feature_206" id="layered_id_feature_206" value="206_4"></span></div> 
+                                                                                                <label for="layered_id_feature_206">
+                                                                                                        <a href="http://rikato.com.ua/ru/872-spectekhnika#material_-metall_plastik">металл, пластик</a>
+                                                                                                    </label>
+                                                </li>
+                                                                                                                                                                    <li class="nomargin hiddable col-lg-6 "> 
+                                                                                                    <div class="checker" id="uniform-layered_id_feature_50"><span><input type="checkbox" class="checkbox" name="layered_id_feature_50" id="layered_id_feature_50" value="50_4"></span></div> 
+                                                                                                <label for="layered_id_feature_50">
+                                                                                                        <a href="http://rikato.com.ua/ru/872-spectekhnika#material_-plastik">пластик</a>
+                                                                                                    </label>
+                                                </li>
+                                                                                                                                                                                                    </ul>
+                            </div>
+                                                                                                                    <div class="layered_filter">
+                                                        <div class="layered_subtitle_heading">
+                                    <span class="layered_subtitle">Пол ребенка:</span>
+                                    <!--<span class="layered_close">
+                                        <a href="#" rel="ul_layered_id_feature_9"></a>
+                                    </span>-->
+                                </div>
+                                <ul id="ul_layered_id_feature_9" class="col-lg-12 layered_filter_ul">
+                                                                                                                                                                                        <li class="nomargin hiddable col-lg-6 "> 
+                                                                                                    <div class="checker" id="uniform-layered_id_feature_36"><span><input type="checkbox" class="checkbox" name="layered_id_feature_36" id="layered_id_feature_36" value="36_9"></span></div> 
+                                                                                                <label for="layered_id_feature_36">
+                                                                                                        <a href="http://rikato.com.ua/ru/872-spectekhnika#pol_rebenka-d_m">д/м</a>
+                                                                                                    </label>
+                                                </li>
+                                                                                                                                                                    <li class="nomargin hiddable col-lg-6 "> 
+                                                                                                    <div class="checker" id="uniform-layered_id_feature_34"><span><input type="checkbox" class="checkbox" name="layered_id_feature_34" id="layered_id_feature_34" value="34_9"></span></div> 
+                                                                                                <label for="layered_id_feature_34">
+                                                                                                        <a href="http://rikato.com.ua/ru/872-spectekhnika#pol_rebenka-dlya_malchikov">для мальчиков</a>
+                                                                                                    </label>
+                                                </li>
+                                                                                                                                                                                                    </ul>
+                            </div>
+                                                                                                                    <div class="layered_filter">
+                                                        <div class="layered_subtitle_heading">
+                                    <span class="layered_subtitle">Упаковка:</span>
+                                    <!--<span class="layered_close">
+                                        <a href="#" rel="ul_layered_id_feature_11"></a>
+                                    </span>-->
+                                </div>
+                                <ul id="ul_layered_id_feature_11" class="col-lg-12 layered_filter_ul">
+                                                                                                                                                                                        <li class="nomargin hiddable col-lg-6 "> 
+                                                        <div class="checker" id="uniform-layered_id_feature_64"><span><input type="checkbox" class="checkbox" name="layered_id_feature_64" id="layered_id_feature_64" value="64_11"></span></div> 
+                                                    <label for="layered_id_feature_64">
+                                                            <a href="http://rikato.com.ua/ru/872-spectekhnika#upakovka-kartonnaya_korobka">картонная коробка</a>
+                                                        </label>
+                                                </li>
+                                                                                                                                                                    <li class="nomargin hiddable col-lg-6 "> 
+                                                                                                    <div class="checker" id="uniform-layered_id_feature_85"><span><input type="checkbox" class="checkbox" name="layered_id_feature_85" id="layered_id_feature_85" value="85_11"></span></div> 
+                                                                                                <label for="layered_id_feature_85">
+                                                                                                        <a href="http://rikato.com.ua/ru/872-spectekhnika#upakovka-kartonnyj_displej">картонный дисплей</a>
+                                                                                                    </label>
+                                                </li>
+                                                                                                                                                                    <li class="nomargin hiddable col-lg-6 "> 
+                                                                                                    <div class="checker" id="uniform-layered_id_feature_56"><span><input type="checkbox" class="checkbox" name="layered_id_feature_56" id="layered_id_feature_56" value="56_11"></span></div> 
+                                                                                                <label for="layered_id_feature_56">
+                                                                                                        <a href="http://rikato.com.ua/ru/872-spectekhnika#upakovka-kartonnyj_polublister">картонный полублистер</a>
+                                                                                                    </label>
+                                                </li>
+                                                                                                                                                                                                    </ul>
+                            </div>
+                                                                                                                    <div class="layered_filter">
+                                                        <div class="layered_subtitle_heading">
+                                    <span class="layered_subtitle">Источник питания:</span>
+                                    <!--<span class="layered_close">
+                                        <a href="#" rel="ul_layered_id_feature_23"></a>
+                                    </span>-->
+                                </div>
+                                <ul id="ul_layered_id_feature_23" class="col-lg-12 layered_filter_ul">
+                                                                                                                                                                                        <li class="nomargin hiddable col-lg-6 "> 
+                                                                                                    <div class="checker" id="uniform-layered_id_feature_184"><span><input type="checkbox" class="checkbox" name="layered_id_feature_184" id="layered_id_feature_184" value="184_23"></span></div> 
+                                                                                                <label for="layered_id_feature_184">
+                                                                                                        <a href="http://rikato.com.ua/ru/872-spectekhnika#istochnik_pitaniya_-na_batarejkakh">на батарейках</a>
+                                                                                                    </label>
+                                                </li>
+                                                                                                                                                                                                    </ul>
+                            </div>
+                            <div class="layered_subtitle_heading">
+                                <span class="layered_subtitle">Цвет</span>
+                            </div>
+                            <!-- colors -->
+                            <div class="colors">
+                                <div class="color is-white"></div>
+                                <div class="color is-green"></div>
+                                <div class="color is-yellow"></div>
+                                <div class="color is-blue"></div>
+                                <div class="color is-pink"></div>
+                            </div>
+                        </div>
+                    <input type="hidden" name="id_category_layered" value="872">
+                                                                                                                                                                                                                                </form>
+            </div>
+            <div id="layered_ajax_loader" style="display: none;">
+                <p class="preloader-wr">
+                    <img src="http://rikato.com.ua/img/loader.gif" alt="">
+                    <br>Загрузка ...
+                </p>
+            </div>
+        </div>
+        <!-- /Block layered navigation module -->
+        </div>
+                                                                                <div id="center_column" class="column  three ">
+            
+                            <!--bogdosarov-->
+                    <div class="content_scene_cat" style="display: none;">
+                                             <!-- Category image -->
+                            <div class="content_scene_cat_bg">
+                                                            <div class="cat_desc">
+                                    <span class="category-name">
+                                        Спецтехника                            </span>
+                                                                    <div class="rte"><p>Спецтехника</p></div>
+                                                                </div>
+                                                     </div>
+                                      </div>
+                        <h1 class="page-heading product-listing"><span class="cat-name">Спецтехника&nbsp;</span><span class="heading-counter">54 товаров.</span>
+        </h1>
+                                    <div class="content_sortPagiBar clearfix">
+                        <div class="sortPagiBar clearfix">
+                            
+            <div class="counts-of-goods">
+                <label>Найдено <span class="item-count">54</span>  товара</label>
+            </div>
+        <form id="productsSortForm" action="http://rikato.com.ua/ru/872-spectekhnika" class="productsSortForm sort-item desk">
+            <div class="clearfix select">
+                <label for="selectProductSort">Сортировать по</label>
+                <select id="selectProductSort" class="selectProductSort form-control">
+                    <option value="price:asc">цене, по возрастанию</option>
+                    <option value="price:desc">цене, по убыванию</option>
+                    <option value="name:asc">названию товара, от А до Я</option>
+                    <option value="name:desc">названию товара, от Я до А</option>
+                    <option value="quantity:desc"></option>
+                    <option value="reference:asc">артикулу, по возрастанию</option>
+                    <option value="reference:desc">артикулу, по убыванию</option>
+                </select>
+            </div>
+        </form>
+        <!-- /Sort products -->
+                    
+            
+                                                        <!-- nbr product/page -->
+                    <form action="http://rikato.com.ua/ru/872-spectekhnika" method="get" class="nbrItemPage sort-item">
+                    <div class="clearfix select">
+                                                        <label for="nb_item">
+                            Показать
+                        </label>
+                                                                                                                                            <input type="hidden" name="id_category" value="872">
+                                                                                    <div class="selector" id="uniform-nb_item" style="width: 122px;"><span style="width: 122px; -webkit-user-select: none;">по 12</span><select name="n" id="nb_item" class="form-control">
+                                                                                                    <option value="12" selected="selected">по 12</option>
+                                                                                                                                <option value="24">по 24</option>
+                                                                                                                                <option value="60">по 60</option>
+                                                                                            </select></div>
+                    </div>
+                </form>
+                <!-- /nbr product/page -->
+
+                            <ul class="display hidden-xs">
+            <li id="grid"><a rel="nofollow" href="#" title="Сетка"><i class="icon-th-large"></i>Сетка</a></li>
+            <li id="list" class="selected"><a rel="nofollow" href="#" title="Список"><i class="icon-th-list"></i>Список</a></li>
+        </ul>
+                        </div>
+                        <!--bogdosarov-->
+                        <!--<div class="top-pagination-content clearfix">-->
+                            
+                            
+                        <!--</div>-->
+                    </div>
+                        
+                                            
+                
+            
+            <!-- Products list -->
+            <ul class="product_list grid row">
+                    
+                
+                
+                <li class="ajax_block_product column  one  first-in-line first-item-of-tablet-line">
+                    <div class="product-container" itemscope="" itemtype="http://schema.org/Product">
+                        <a class="new-box" href="#">
+                            <span class="new-label">Скидка</span>
+                        </a>
+                        <div class="left-block">
+                            <div class="product-image-container">
+                                <a class="product_img_link" href="http://rikato.com.ua/ru/mashinki-tekhnika-oruzhie/19194-mashina-na-radioupravlinni-v-889090-r-v-870154-pidjomnij-kran-102640.html" title="Подъемный кран на радиоуправлении (В 889090 R / В 870154)" itemprop="url">
+                                    <img class="replace-2x img-responsive" src="http://rikato.com.ua/4168-home_default/mashina-na-radioupravlinni-v-889090-r-v-870154-pidjomnij-kran.jpg" alt="Подъемный кран на радиоуправлении (В 889090 R / В 870154)" title="Подъемный кран на радиоуправлении (В 889090 R / В 870154)" width="250" height="250" itemprop="image">
+                                </a>
+                                                            <div class="quick-view-wrapper-mobile">
+                                    <a class="quick-view-mobile" href="http://rikato.com.ua/ru/mashinki-tekhnika-oruzhie/19194-mashina-na-radioupravlinni-v-889090-r-v-870154-pidjomnij-kran-102640.html" rel="http://rikato.com.ua/ru/mashinki-tekhnika-oruzhie/19194-mashina-na-radioupravlinni-v-889090-r-v-870154-pidjomnij-kran-102640.html">
+                                        <i class="icon-eye-open"></i>
+                                    </a>
+                                </div>
+                                <a class="quick-view" href="http://rikato.com.ua/ru/mashinki-tekhnika-oruzhie/19194-mashina-na-radioupravlinni-v-889090-r-v-870154-pidjomnij-kran-102640.html" rel="http://rikato.com.ua/ru/mashinki-tekhnika-oruzhie/19194-mashina-na-radioupravlinni-v-889090-r-v-870154-pidjomnij-kran-102640.html">
+                                    <span>Быстрый просмотр</span>
+                                </a>
+                                                                                    <div class="content_price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                                                            <span itemprop="price" class="price product-price  ">
+                                                247,59 грн                                  </span>
+                                            <meta itemprop="priceCurrency" content="UAH">
+                                                                                
+                                            
+                                                                    </div>
+                                                                                                    </div>
+                            
+                            
+                        </div>
+                        <div class="right-block">
+                            <h5 itemprop="name">
+                                                        <a class="product-name" href="http://rikato.com.ua/ru/mashinki-tekhnika-oruzhie/19194-mashina-na-radioupravlinni-v-889090-r-v-870154-pidjomnij-kran-102640.html" title="Подъемный кран на радиоуправлении (В 889090 R / В 870154)" itemprop="url">
+                                    Подъемный кран на радиоуправлении (В...
+                                </a>
+                            </h5>
+                            <p class="product-desc" itemprop="description">
+                                
+                            </p>
+                                                <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="content_price">
+                                                            <span itemprop="price" class="price product-price ">
+                                        247,59 грн                          </span>
+                                    <meta itemprop="priceCurrency" content="UAH">
+                                                                
+                                    
+                                                    </div>
+                                                
+                            <div class="button-container">
+                                
+                                                                                                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://rikato.com.ua/ru/cart?add=1&amp;id_product=19194&amp;token=1080c18152aa1298b707405aa2de407b" rel="nofollow" title="В корзину" data-id-product="19194">
+                                                <span>В корзину</span>
+                                            </a>
+                                                                                                                    <div class="cart_quantity text-center">
+            <input type="text" data-pack="1" name="qty-19194" class="text cart_quantity_input form-control grey decorate" value="1">
+            
+            <div class="cart_quantity_button clearfix">
+                <a rel="nofollow" data-pack="1" href="#" data-field-qty="qty-19194" data-qty-availiable="1000" class="product_quantity_up btn btn-default button-plus">
+                    <span><i class="icon-plus"></i></span>
+                </a>
+                <a href="#" data-pack="1" rel="nofollow" data-field-qty="qty-19194" class="btn btn-default button-minus product_quantity_down">
+                    <span><i class="icon-minus"></i></span>
+                </a>
+            </div>
+            
+        </div>
+                            </div>
+                                                    <div class="color-list-container hidden"></div>
+                                                <div class="product-flags">
+                                                                                                                                </div>
+                                                                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="availability hidden">
+                                                                            <span class="available-now">
+                                                <link itemprop="availability" href="http://schema.org/InStock">В наличии                                    </span>
+                                                                    </span>
+                                                                    </div>
+                                            <div class="functional-buttons hidden clearfix">
+                                
+        <div class="wishlist">
+            <a class="addToWishlist wishlistProd_19194" href="#" rel="19194" onclick="WishlistCart('wishlist_block_list', 'add', '19194', false, 1); return false;">
+                Добавить в список желаний
+            </a>
+        </div>
+                                                            <div class="compare">
+                                        <a class="add_to_compare" href="http://rikato.com.ua/ru/mashinki-tekhnika-oruzhie/19194-mashina-na-radioupravlinni-v-889090-r-v-870154-pidjomnij-kran-102640.html" data-id-product="19194">Добавить к сравнению</a>
+                                    </div>
+                                                    </div>
+                                    </div><!-- .product-container> -->
+                </li>
+                    
+                
+                
+                <li class="ajax_block_product column  one  last-item-of-tablet-line">
+                    <div class="product-container" itemscope="" itemtype="http://schema.org/Product">
+                        <a class="new-box" href="#">
+                            <span class="new-label is-yellow">Скидка</span>
+                        </a>
+                        <div class="left-block">
+                            <div class="product-image-container">
+                                <a class="product_img_link" href="http://rikato.com.ua/ru/spectekhnika/18479-avtomobil-mag-795-104313.html" title="Автомобиль (795)" itemprop="url">
+                                    <img class="replace-2x img-responsive" src="http://rikato.com.ua/4641-home_default/avtomobil-mag-795.jpg" alt="Автомобіль МАГ 795" title="Автомобіль МАГ 795" width="250" height="250" itemprop="image">
+                                </a>
+                                                            <div class="quick-view-wrapper-mobile">
+                                    <a class="quick-view-mobile" href="http://rikato.com.ua/ru/spectekhnika/18479-avtomobil-mag-795-104313.html" rel="http://rikato.com.ua/ru/spectekhnika/18479-avtomobil-mag-795-104313.html">
+                                        <i class="icon-eye-open"></i>
+                                    </a>
+                                </div>
+                                <a class="quick-view" href="http://rikato.com.ua/ru/spectekhnika/18479-avtomobil-mag-795-104313.html" rel="http://rikato.com.ua/ru/spectekhnika/18479-avtomobil-mag-795-104313.html">
+                                    <span>Быстрый просмотр</span>
+                                </a>
+                                                                                    <div class="content_price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                                                            <span itemprop="price" class="price product-price  ">
+                                                286,86 грн                                  </span>
+                                            <meta itemprop="priceCurrency" content="UAH">
+                                                                                
+                                            
+                                                                    </div>
+                                                                                                    </div>
+                            
+                            
+                        </div>
+                        <div class="right-block">
+                            <h5 itemprop="name">
+                                                        <a class="product-name" href="http://rikato.com.ua/ru/spectekhnika/18479-avtomobil-mag-795-104313.html" title="Автомобиль (795)" itemprop="url">
+                                    Автомобиль (795)
+                                </a>
+                            </h5>
+                            <p class="product-desc" itemprop="description">
+                                
+                            </p>
+                                                <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="content_price">
+                                                            <span itemprop="price" class="price product-price ">
+                                        286,86 грн                          </span>
+                                    <meta itemprop="priceCurrency" content="UAH">
+                                                                
+                                    
+                                                    </div>
+                                                
+                            <div class="button-container">
+                                
+                                                                                                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://rikato.com.ua/ru/cart?add=1&amp;id_product=18479&amp;token=1080c18152aa1298b707405aa2de407b" rel="nofollow" title="В корзину" data-id-product="18479">
+                                                <span>В корзину</span>
+                                            </a>
+                                                                                                                    <div class="cart_quantity text-center">
+            <input type="text" data-pack="1" name="qty-18479" class="text cart_quantity_input form-control grey decorate" value="1">
+            
+            <div class="cart_quantity_button clearfix">
+                <a rel="nofollow" data-pack="1" href="#" data-field-qty="qty-18479" data-qty-availiable="1000" class="product_quantity_up btn btn-default button-plus">
+                    <span><i class="icon-plus"></i></span>
+                </a>
+                <a href="#" data-pack="1" rel="nofollow" data-field-qty="qty-18479" class="btn btn-default button-minus product_quantity_down">
+                    <span><i class="icon-minus"></i></span>
+                </a>
+            </div>
+            
+        </div>
+                            </div>
+                                                    <div class="color-list-container hidden"></div>
+                                                <div class="product-flags">
+                                                                                                                                </div>
+                                                                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="availability hidden">
+                                                                            <span class="available-now">
+                                                <link itemprop="availability" href="http://schema.org/InStock">В наличии                                    </span>
+                                                                    </span>
+                                                                    </div>
+                                            <div class="functional-buttons hidden clearfix">
+                                
+        <div class="wishlist">
+            <a class="addToWishlist wishlistProd_18479" href="#" rel="18479" onclick="WishlistCart('wishlist_block_list', 'add', '18479', false, 1); return false;">
+                Добавить в список желаний
+            </a>
+        </div>
+                                                            <div class="compare">
+                                        <a class="add_to_compare" href="http://rikato.com.ua/ru/spectekhnika/18479-avtomobil-mag-795-104313.html" data-id-product="18479">Добавить к сравнению</a>
+                                    </div>
+                                                    </div>
+                                    </div><!-- .product-container> -->
+                </li>
+                    
+                
+                
+                                        <li class="ajax_block_product column  one  last-in-line first-item-of-tablet-line">
+                    <div class="product-container" itemscope="" itemtype="http://schema.org/Product">
+                        <a class="new-box" href="#">
+                            <span class="new-label is-green">Скидка</span>
+                        </a>
+                        <div class="left-block">
+                            <div class="product-image-container">
+                                <a class="product_img_link" href="http://rikato.com.ua/ru/mashinki-tekhnika-oruzhie/19015-mashina-na-radioupravlinni-v-975041-policejska-bmv-102347.html" title="Машина на радиоуправлении &quot;Полицейская БМВ&quot; (В 975041)" itemprop="url">
+                                    <img class="replace-2x img-responsive" src="http://rikato.com.ua/4484-home_default/mashina-na-radioupravlinni-v-975041-policejska-bmv.jpg" alt="Машина на радиоуправлении &quot;Полицейская БМВ&quot; (В 975041)" title="Машина на радиоуправлении &quot;Полицейская БМВ&quot; (В 975041)" width="250" height="250" itemprop="image">
+                                </a>
+                                                            <div class="quick-view-wrapper-mobile">
+                                    <a class="quick-view-mobile" href="http://rikato.com.ua/ru/mashinki-tekhnika-oruzhie/19015-mashina-na-radioupravlinni-v-975041-policejska-bmv-102347.html" rel="http://rikato.com.ua/ru/mashinki-tekhnika-oruzhie/19015-mashina-na-radioupravlinni-v-975041-policejska-bmv-102347.html">
+                                        <i class="icon-eye-open"></i>
+                                    </a>
+                                </div>
+                                <a class="quick-view" href="http://rikato.com.ua/ru/mashinki-tekhnika-oruzhie/19015-mashina-na-radioupravlinni-v-975041-policejska-bmv-102347.html" rel="http://rikato.com.ua/ru/mashinki-tekhnika-oruzhie/19015-mashina-na-radioupravlinni-v-975041-policejska-bmv-102347.html">
+                                    <span>Быстрый просмотр</span>
+                                </a>
+                                                                                    <div class="content_price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                                                            <span itemprop="price" class="price product-price  ">
+                                                271,82 грн                                  </span>
+                                            <meta itemprop="priceCurrency" content="UAH">
+                                                                                
+                                            
+                                                                    </div>
+                                                                                                    </div>
+                            
+                            
+                        </div>
+                        <div class="right-block">
+                            <h5 itemprop="name">
+                                                        <a class="product-name" href="http://rikato.com.ua/ru/mashinki-tekhnika-oruzhie/19015-mashina-na-radioupravlinni-v-975041-policejska-bmv-102347.html" title="Машина на радиоуправлении &quot;Полицейская БМВ&quot; (В 975041)" itemprop="url">
+                                    Машина на радиоуправлении "Полицейская...
+                                </a>
+                            </h5>
+                            <p class="product-desc" itemprop="description">
+                                
+                            </p>
+                                                <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="content_price">
+                                                            <span itemprop="price" class="price product-price ">
+                                        271,82 грн                          </span>
+                                    <meta itemprop="priceCurrency" content="UAH">
+                                                                
+                                    
+                                                    </div>
+                                                
+                            <div class="button-container">
+                                
+                                                                                                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://rikato.com.ua/ru/cart?add=1&amp;id_product=19015&amp;token=1080c18152aa1298b707405aa2de407b" rel="nofollow" title="В корзину" data-id-product="19015">
+                                                <span>В корзину</span>
+                                            </a>
+                                                                                                                    <div class="cart_quantity text-center">
+            <input type="text" data-pack="1" name="qty-19015" class="text cart_quantity_input form-control grey decorate" value="1">
+            
+            <div class="cart_quantity_button clearfix">
+                <a rel="nofollow" data-pack="1" href="#" data-field-qty="qty-19015" data-qty-availiable="1000" class="product_quantity_up btn btn-default button-plus">
+                    <span><i class="icon-plus"></i></span>
+                </a>
+                <a href="#" data-pack="1" rel="nofollow" data-field-qty="qty-19015" class="btn btn-default button-minus product_quantity_down">
+                    <span><i class="icon-minus"></i></span>
+                </a>
+            </div>
+            
+        </div>
+                            </div>
+                                                    <div class="color-list-container hidden"></div>
+                                                <div class="product-flags">
+                                                                                                                                </div>
+                                                                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="availability hidden">
+                                                                            <span class="available-now">
+                                                <link itemprop="availability" href="http://schema.org/InStock">В наличии                                    </span>
+                                                                    </span>
+                                                                    </div>
+                                            <div class="functional-buttons hidden clearfix">
+                                
+        <div class="wishlist">
+            <a class="addToWishlist wishlistProd_19015" href="#" rel="19015" onclick="WishlistCart('wishlist_block_list', 'add', '19015', false, 1); return false;">
+                Добавить в список желаний
+            </a>
+        </div>
+                                                            <div class="compare">
+                                        <a class="add_to_compare" href="http://rikato.com.ua/ru/mashinki-tekhnika-oruzhie/19015-mashina-na-radioupravlinni-v-975041-policejska-bmv-102347.html" data-id-product="19015">Добавить к сравнению</a>
+                                    </div>
+                                                    </div>
+                                    </div><!-- .product-container> -->
+                </li>
+                    
+                
+                
+                                        <li class="ajax_block_product column  one  first-in-line last-item-of-tablet-line">
+                    <div class="product-container" itemscope="" itemtype="http://schema.org/Product">
+                        <div class="left-block">
+                            <div class="product-image-container">
+                                <a class="product_img_link" href="http://rikato.com.ua/ru/igrushki/38636-avtomobil-kh5-104514.html" title="Автомобиль Х5" itemprop="url">
+                                    <img class="replace-2x img-responsive" src="http://rikato.com.ua/4672-home_default/avtomobil-kh5.jpg" alt="Автомобиль Х5" title="Автомобиль Х5" width="250" height="250" itemprop="image">
+                                </a>
+                                                            <div class="quick-view-wrapper-mobile">
+                                    <a class="quick-view-mobile" href="http://rikato.com.ua/ru/igrushki/38636-avtomobil-kh5-104514.html" rel="http://rikato.com.ua/ru/igrushki/38636-avtomobil-kh5-104514.html">
+                                        <i class="icon-eye-open"></i>
+                                    </a>
+                                </div>
+                                <a class="quick-view" href="http://rikato.com.ua/ru/igrushki/38636-avtomobil-kh5-104514.html" rel="http://rikato.com.ua/ru/igrushki/38636-avtomobil-kh5-104514.html">
+                                    <span>Быстрый просмотр</span>
+                                </a>
+                                                                                    <div class="content_price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                                                            <span itemprop="price" class="price product-price  ">
+                                                334,78 грн                                  </span>
+                                            <meta itemprop="priceCurrency" content="UAH">
+                                                                                
+                                            
+                                                                    </div>
+                                                                                                    </div>
+                            
+                            
+                        </div>
+                        <div class="right-block">
+                            <h5 itemprop="name">
+                                                        <a class="product-name" href="http://rikato.com.ua/ru/igrushki/38636-avtomobil-kh5-104514.html" title="Автомобиль Х5" itemprop="url">
+                                    Автомобиль Х5
+                                </a>
+                            </h5>
+                            <p class="product-desc" itemprop="description">
+                                
+                            </p>
+                                                <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="content_price">
+                                                            <span itemprop="price" class="price product-price ">
+                                        334,78 грн                          </span>
+                                    <meta itemprop="priceCurrency" content="UAH">
+                                                                
+                                    
+                                                    </div>
+                                                
+                            <div class="button-container">
+                                
+                                                                                                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://rikato.com.ua/ru/cart?add=1&amp;id_product=38636&amp;token=1080c18152aa1298b707405aa2de407b" rel="nofollow" title="В корзину" data-id-product="38636">
+                                                <span>В корзину</span>
+                                            </a>
+                                                                                                                    <div class="cart_quantity text-center">
+            <input type="text" data-pack="1" name="qty-38636" class="text cart_quantity_input form-control grey decorate" value="1">
+            
+            <div class="cart_quantity_button clearfix">
+                <a rel="nofollow" data-pack="1" href="#" data-field-qty="qty-38636" data-qty-availiable="1000" class="product_quantity_up btn btn-default button-plus">
+                    <span><i class="icon-plus"></i></span>
+                </a>
+                <a href="#" data-pack="1" rel="nofollow" data-field-qty="qty-38636" class="btn btn-default button-minus product_quantity_down">
+                    <span><i class="icon-minus"></i></span>
+                </a>
+            </div>
+            
+        </div>
+                            </div>
+                                                    <div class="color-list-container hidden"></div>
+                                                <div class="product-flags">
+                                                                                                                                </div>
+                                                                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="availability hidden">
+                                                                            <span class="available-now">
+                                                <link itemprop="availability" href="http://schema.org/InStock">В наличии                                    </span>
+                                                                    </span>
+                                                                    </div>
+                                            <div class="functional-buttons hidden clearfix">
+                                
+        <div class="wishlist">
+            <a class="addToWishlist wishlistProd_38636" href="#" rel="38636" onclick="WishlistCart('wishlist_block_list', 'add', '38636', false, 1); return false;">
+                Добавить в список желаний
+            </a>
+        </div>
+                                                            <div class="compare">
+                                        <a class="add_to_compare" href="http://rikato.com.ua/ru/igrushki/38636-avtomobil-kh5-104514.html" data-id-product="38636">Добавить к сравнению</a>
+                                    </div>
+                                                    </div>
+                                    </div><!-- .product-container> -->
+                </li>
+                    
+                
+                
+                                        <li class="ajax_block_product column  one  first-item-of-tablet-line">
+                    <div class="product-container" itemscope="" itemtype="http://schema.org/Product">
+                        <div class="left-block">
+                            <div class="product-image-container">
+                                <a class="product_img_link" href="http://rikato.com.ua/ru/spectekhnika/18515-avtomobil-kh1-samoskid-320-104332.html" title="Автомобиль самосвал Х1 (320)" itemprop="url">
+                                    <img class="replace-2x img-responsive" src="http://rikato.com.ua/4656-home_default/avtomobil-kh1-samoskid-320.jpg" alt="Автомобіль Х1 самоскид 320" title="Автомобіль Х1 самоскид 320" width="250" height="250" itemprop="image">
+                                </a>
+                                                            <div class="quick-view-wrapper-mobile">
+                                    <a class="quick-view-mobile" href="http://rikato.com.ua/ru/spectekhnika/18515-avtomobil-kh1-samoskid-320-104332.html" rel="http://rikato.com.ua/ru/spectekhnika/18515-avtomobil-kh1-samoskid-320-104332.html">
+                                        <i class="icon-eye-open"></i>
+                                    </a>
+                                </div>
+                                <a class="quick-view" href="http://rikato.com.ua/ru/spectekhnika/18515-avtomobil-kh1-samoskid-320-104332.html" rel="http://rikato.com.ua/ru/spectekhnika/18515-avtomobil-kh1-samoskid-320-104332.html">
+                                    <span>Быстрый просмотр</span>
+                                </a>
+                                                                                    <div class="content_price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                                                            <span itemprop="price" class="price product-price  ">
+                                                20,30 грн                                   </span>
+                                            <meta itemprop="priceCurrency" content="UAH">
+                                                                                
+                                            
+                                                                    </div>
+                                                                                                    </div>
+                            
+                            
+                        </div>
+                        <div class="right-block">
+                            <h5 itemprop="name">
+                                                        <a class="product-name" href="http://rikato.com.ua/ru/spectekhnika/18515-avtomobil-kh1-samoskid-320-104332.html" title="Автомобиль самосвал Х1 (320)" itemprop="url">
+                                    Автомобиль самосвал Х1 (320)
+                                </a>
+                            </h5>
+                            <p class="product-desc" itemprop="description">
+                                
+                            </p>
+                                                <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="content_price">
+                                                            <span itemprop="price" class="price product-price ">
+                                        20,30 грн                           </span>
+                                    <meta itemprop="priceCurrency" content="UAH">
+                                                                
+                                    
+                                                    </div>
+                                                
+                            <div class="button-container">
+                                
+                                                                                                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://rikato.com.ua/ru/cart?add=1&amp;id_product=18515&amp;token=1080c18152aa1298b707405aa2de407b" rel="nofollow" title="В корзину" data-id-product="18515">
+                                                <span>В корзину</span>
+                                            </a>
+                                                                                                                    <div class="cart_quantity text-center">
+            <input type="text" data-pack="1" name="qty-18515" class="text cart_quantity_input form-control grey decorate" value="1">
+            
+            <div class="cart_quantity_button clearfix">
+                <a rel="nofollow" data-pack="1" href="#" data-field-qty="qty-18515" data-qty-availiable="1000" class="product_quantity_up btn btn-default button-plus">
+                    <span><i class="icon-plus"></i></span>
+                </a>
+                <a href="#" data-pack="1" rel="nofollow" data-field-qty="qty-18515" class="btn btn-default button-minus product_quantity_down">
+                    <span><i class="icon-minus"></i></span>
+                </a>
+            </div>
+            
+        </div>
+                            </div>
+                                                    <div class="color-list-container hidden"></div>
+                                                <div class="product-flags">
+                                                                                                                                </div>
+                                                                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="availability hidden">
+                                                                            <span class="available-now">
+                                                <link itemprop="availability" href="http://schema.org/InStock">В наличии                                    </span>
+                                                                    </span>
+                                                                    </div>
+                                            <div class="functional-buttons hidden clearfix">
+                                
+        <div class="wishlist">
+            <a class="addToWishlist wishlistProd_18515" href="#" rel="18515" onclick="WishlistCart('wishlist_block_list', 'add', '18515', false, 1); return false;">
+                Добавить в список желаний
+            </a>
+        </div>
+                                                            <div class="compare">
+                                        <a class="add_to_compare" href="http://rikato.com.ua/ru/spectekhnika/18515-avtomobil-kh1-samoskid-320-104332.html" data-id-product="18515">Добавить к сравнению</a>
+                                    </div>
+                                                    </div>
+                                    </div><!-- .product-container> -->
+                </li>
+                    
+                
+                
+                                        <li class="ajax_block_product column  one  last-in-line last-item-of-tablet-line">
+                    <div class="product-container" itemscope="" itemtype="http://schema.org/Product">
+                        <div class="left-block">
+                            <div class="product-image-container">
+                                <a class="product_img_link" href="http://rikato.com.ua/ru/spectekhnika/38360-avtomobil-kamaks-1-104523.html" title="Автомобиль &quot;Камакс №1&quot;" itemprop="url">
+                                    <img class="replace-2x img-responsive" src="http://rikato.com.ua/4680-home_default/avtomobil-kamaks-1.jpg" alt="Автомобиль КАМАКС №1" title="Автомобиль КАМАКС №1" width="250" height="250" itemprop="image">
+                                </a>
+                                                            <div class="quick-view-wrapper-mobile">
+                                    <a class="quick-view-mobile" href="http://rikato.com.ua/ru/spectekhnika/38360-avtomobil-kamaks-1-104523.html" rel="http://rikato.com.ua/ru/spectekhnika/38360-avtomobil-kamaks-1-104523.html">
+                                        <i class="icon-eye-open"></i>
+                                    </a>
+                                </div>
+                                <a class="quick-view" href="http://rikato.com.ua/ru/spectekhnika/38360-avtomobil-kamaks-1-104523.html" rel="http://rikato.com.ua/ru/spectekhnika/38360-avtomobil-kamaks-1-104523.html">
+                                    <span>Быстрый просмотр</span>
+                                </a>
+                                                                                    <div class="content_price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                                                            <span itemprop="price" class="price product-price  ">
+                                                20,18 грн                                   </span>
+                                            <meta itemprop="priceCurrency" content="UAH">
+                                                                                
+                                            
+                                                                    </div>
+                                                                                                    </div>
+                            
+                            
+                        </div>
+                        <div class="right-block">
+                            <h5 itemprop="name">
+                                                        <a class="product-name" href="http://rikato.com.ua/ru/spectekhnika/38360-avtomobil-kamaks-1-104523.html" title="Автомобиль &quot;Камакс №1&quot;" itemprop="url">
+                                    Автомобиль "Камакс №1"
+                                </a>
+                            </h5>
+                            <p class="product-desc" itemprop="description">
+                                
+                            </p>
+                                                <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="content_price">
+                                                            <span itemprop="price" class="price product-price ">
+                                        20,18 грн                           </span>
+                                    <meta itemprop="priceCurrency" content="UAH">
+                                                                
+                                    
+                                                    </div>
+                                                
+                            <div class="button-container">
+                                
+                                                                                                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://rikato.com.ua/ru/cart?add=1&amp;id_product=38360&amp;token=1080c18152aa1298b707405aa2de407b" rel="nofollow" title="В корзину" data-id-product="38360">
+                                                <span>В корзину</span>
+                                            </a>
+                                                                                                                    <div class="cart_quantity text-center">
+            <input type="text" data-pack="1" name="qty-38360" class="text cart_quantity_input form-control grey decorate" value="1">
+            
+            <div class="cart_quantity_button clearfix">
+                <a rel="nofollow" data-pack="1" href="#" data-field-qty="qty-38360" data-qty-availiable="1000" class="product_quantity_up btn btn-default button-plus">
+                    <span><i class="icon-plus"></i></span>
+                </a>
+                <a href="#" data-pack="1" rel="nofollow" data-field-qty="qty-38360" class="btn btn-default button-minus product_quantity_down">
+                    <span><i class="icon-minus"></i></span>
+                </a>
+            </div>
+            
+        </div>
+                            </div>
+                                                    <div class="color-list-container hidden"></div>
+                                                <div class="product-flags">
+                                                                                                                                </div>
+                                                                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="availability hidden">
+                                                                            <span class="available-now">
+                                                <link itemprop="availability" href="http://schema.org/InStock">В наличии                                    </span>
+                                                                    </span>
+                                                                    </div>
+                                            <div class="functional-buttons hidden clearfix">
+                                
+        <div class="wishlist">
+            <a class="addToWishlist wishlistProd_38360" href="#" rel="38360" onclick="WishlistCart('wishlist_block_list', 'add', '38360', false, 1); return false;">
+                Добавить в список желаний
+            </a>
+        </div>
+                                                            <div class="compare">
+                                        <a class="add_to_compare" href="http://rikato.com.ua/ru/spectekhnika/38360-avtomobil-kamaks-1-104523.html" data-id-product="38360">Добавить к сравнению</a>
+                                    </div>
+                                                    </div>
+                                    </div><!-- .product-container> -->
+                </li>
+                    
+                
+                
+                                        <li class="ajax_block_product column  one  first-in-line first-item-of-tablet-line">
+                    <div class="product-container" itemscope="" itemtype="http://schema.org/Product">
+                        <div class="left-block">
+                            <div class="product-image-container">
+                                <a class="product_img_link" href="http://rikato.com.ua/ru/spectekhnika/38638-avtomobil-kamaks-s-uslovnym-gruzom-104520.html" title="Автомобиль с условным грузом &quot;Камакс&quot;" itemprop="url">
+                                    <img class="replace-2x img-responsive" src="http://rikato.com.ua/4677-home_default/avtomobil-kamaks-s-uslovnym-gruzom.jpg" alt="Автомобиль КАМАКС с условным грузом" title="Автомобиль КАМАКС с условным грузом" width="250" height="250" itemprop="image">
+                                </a>
+                                                            <div class="quick-view-wrapper-mobile">
+                                    <a class="quick-view-mobile" href="http://rikato.com.ua/ru/spectekhnika/38638-avtomobil-kamaks-s-uslovnym-gruzom-104520.html" rel="http://rikato.com.ua/ru/spectekhnika/38638-avtomobil-kamaks-s-uslovnym-gruzom-104520.html">
+                                        <i class="icon-eye-open"></i>
+                                    </a>
+                                </div>
+                                <a class="quick-view" href="http://rikato.com.ua/ru/spectekhnika/38638-avtomobil-kamaks-s-uslovnym-gruzom-104520.html" rel="http://rikato.com.ua/ru/spectekhnika/38638-avtomobil-kamaks-s-uslovnym-gruzom-104520.html">
+                                    <span>Быстрый просмотр</span>
+                                </a>
+                                                                                    <div class="content_price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                                                            <span itemprop="price" class="price product-price  ">
+                                                23,13 грн                                   </span>
+                                            <meta itemprop="priceCurrency" content="UAH">
+                                                                                
+                                            
+                                                                    </div>
+                                                                                                    </div>
+                            
+                            
+                        </div>
+                        <div class="right-block">
+                            <h5 itemprop="name">
+                                                        <a class="product-name" href="http://rikato.com.ua/ru/spectekhnika/38638-avtomobil-kamaks-s-uslovnym-gruzom-104520.html" title="Автомобиль с условным грузом &quot;Камакс&quot;" itemprop="url">
+                                    Автомобиль с условным грузом "Камакс"
+                                </a>
+                            </h5>
+                            <p class="product-desc" itemprop="description">
+                                
+                            </p>
+                                                <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="content_price">
+                                                            <span itemprop="price" class="price product-price ">
+                                        23,13 грн                           </span>
+                                    <meta itemprop="priceCurrency" content="UAH">
+                                                                
+                                    
+                                                    </div>
+                                                
+                            <div class="button-container">
+                                
+                                                                                                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://rikato.com.ua/ru/cart?add=1&amp;id_product=38638&amp;token=1080c18152aa1298b707405aa2de407b" rel="nofollow" title="В корзину" data-id-product="38638">
+                                                <span>В корзину</span>
+                                            </a>
+                                                                                                                    <div class="cart_quantity text-center">
+            <input type="text" data-pack="1" name="qty-38638" class="text cart_quantity_input form-control grey decorate" value="1">
+            
+            <div class="cart_quantity_button clearfix">
+                <a rel="nofollow" data-pack="1" href="#" data-field-qty="qty-38638" data-qty-availiable="1000" class="product_quantity_up btn btn-default button-plus">
+                    <span><i class="icon-plus"></i></span>
+                </a>
+                <a href="#" data-pack="1" rel="nofollow" data-field-qty="qty-38638" class="btn btn-default button-minus product_quantity_down">
+                    <span><i class="icon-minus"></i></span>
+                </a>
+            </div>
+            
+        </div>
+                            </div>
+                                                    <div class="color-list-container hidden"></div>
+                                                <div class="product-flags">
+                                                                                                                                </div>
+                                                                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="availability hidden">
+                                                                            <span class="available-now">
+                                                <link itemprop="availability" href="http://schema.org/InStock">В наличии                                    </span>
+                                                                    </span>
+                                                                    </div>
+                                            <div class="functional-buttons hidden clearfix">
+                                
+        <div class="wishlist">
+            <a class="addToWishlist wishlistProd_38638" href="#" rel="38638" onclick="WishlistCart('wishlist_block_list', 'add', '38638', false, 1); return false;">
+                Добавить в список желаний
+            </a>
+        </div>
+                                                            <div class="compare">
+                                        <a class="add_to_compare" href="http://rikato.com.ua/ru/spectekhnika/38638-avtomobil-kamaks-s-uslovnym-gruzom-104520.html" data-id-product="38638">Добавить к сравнению</a>
+                                    </div>
+                                                    </div>
+                                    </div><!-- .product-container> -->
+                </li>
+                    
+                
+                
+                                        <li class="ajax_block_product column  one  last-item-of-tablet-line">
+                    <div class="product-container" itemscope="" itemtype="http://schema.org/Product">
+                        <div class="left-block">
+                            <div class="product-image-container">
+                                <a class="product_img_link" href="http://rikato.com.ua/ru/spectekhnika/18491-komunalna-mashina-kh1-600-104323.html" title="Коммунальная машина Х1 600" itemprop="url">
+                                    <img class="replace-2x img-responsive" src="http://rikato.com.ua/4650-home_default/komunalna-mashina-kh1-600.jpg" alt="Комунальна машина Х1 600" title="Комунальна машина Х1 600" width="250" height="250" itemprop="image">
+                                </a>
+                                                            <div class="quick-view-wrapper-mobile">
+                                    <a class="quick-view-mobile" href="http://rikato.com.ua/ru/spectekhnika/18491-komunalna-mashina-kh1-600-104323.html" rel="http://rikato.com.ua/ru/spectekhnika/18491-komunalna-mashina-kh1-600-104323.html">
+                                        <i class="icon-eye-open"></i>
+                                    </a>
+                                </div>
+                                <a class="quick-view" href="http://rikato.com.ua/ru/spectekhnika/18491-komunalna-mashina-kh1-600-104323.html" rel="http://rikato.com.ua/ru/spectekhnika/18491-komunalna-mashina-kh1-600-104323.html">
+                                    <span>Быстрый просмотр</span>
+                                </a>
+                                                                                    <div class="content_price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                                                            <span itemprop="price" class="price product-price  ">
+                                                24,07 грн                                   </span>
+                                            <meta itemprop="priceCurrency" content="UAH">
+                                                                                
+                                            
+                                                                    </div>
+                                                                                                    </div>
+                            
+                            
+                        </div>
+                        <div class="right-block">
+                            <h5 itemprop="name">
+                                                        <a class="product-name" href="http://rikato.com.ua/ru/spectekhnika/18491-komunalna-mashina-kh1-600-104323.html" title="Коммунальная машина Х1 600" itemprop="url">
+                                    Коммунальная машина Х1 600
+                                </a>
+                            </h5>
+                            <p class="product-desc" itemprop="description">
+                                
+                            </p>
+                                                <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="content_price">
+                                                            <span itemprop="price" class="price product-price ">
+                                        24,07 грн                           </span>
+                                    <meta itemprop="priceCurrency" content="UAH">
+                                                                
+                                    
+                                                    </div>
+                                                
+                            <div class="button-container">
+                                
+                                                                                                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://rikato.com.ua/ru/cart?add=1&amp;id_product=18491&amp;token=1080c18152aa1298b707405aa2de407b" rel="nofollow" title="В корзину" data-id-product="18491">
+                                                <span>В корзину</span>
+                                            </a>
+                                                                                                                    <div class="cart_quantity text-center">
+            <input type="text" data-pack="1" name="qty-18491" class="text cart_quantity_input form-control grey decorate" value="1">
+            
+            <div class="cart_quantity_button clearfix">
+                <a rel="nofollow" data-pack="1" href="#" data-field-qty="qty-18491" data-qty-availiable="1000" class="product_quantity_up btn btn-default button-plus">
+                    <span><i class="icon-plus"></i></span>
+                </a>
+                <a href="#" data-pack="1" rel="nofollow" data-field-qty="qty-18491" class="btn btn-default button-minus product_quantity_down">
+                    <span><i class="icon-minus"></i></span>
+                </a>
+            </div>
+            
+        </div>
+                            </div>
+                                                    <div class="color-list-container hidden"></div>
+                                                <div class="product-flags">
+                                                                                                                                </div>
+                                                                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="availability hidden">
+                                                                            <span class="available-now">
+                                                <link itemprop="availability" href="http://schema.org/InStock">В наличии                                    </span>
+                                                                    </span>
+                                                                    </div>
+                                            <div class="functional-buttons hidden clearfix">
+                                
+        <div class="wishlist">
+            <a class="addToWishlist wishlistProd_18491" href="#" rel="18491" onclick="WishlistCart('wishlist_block_list', 'add', '18491', false, 1); return false;">
+                Добавить в список желаний
+            </a>
+        </div>
+                                                            <div class="compare">
+                                        <a class="add_to_compare" href="http://rikato.com.ua/ru/spectekhnika/18491-komunalna-mashina-kh1-600-104323.html" data-id-product="18491">Добавить к сравнению</a>
+                                    </div>
+                                                    </div>
+                                    </div><!-- .product-container> -->
+                </li>
+                    
+                
+                
+                                        <li class="ajax_block_product column  one  last-in-line first-item-of-tablet-line">
+                    <div class="product-container" itemscope="" itemtype="http://schema.org/Product">
+                        <div class="left-block">
+                            <div class="product-image-container">
+                                <a class="product_img_link" href="http://rikato.com.ua/ru/igrushki/18495-betonozmishuvalna-mashina-kh1-122-104328.html" title="Бетономешалка Х1 " itemprop="url">
+                                    <img class="replace-2x img-responsive" src="http://rikato.com.ua/4655-home_default/betonozmishuvalna-mashina-kh1-122.jpg" alt="Бетонозмішувальна машина Х1 122" title="Бетонозмішувальна машина Х1 122" width="250" height="250" itemprop="image">
+                                </a>
+                                                            <div class="quick-view-wrapper-mobile">
+                                    <a class="quick-view-mobile" href="http://rikato.com.ua/ru/igrushki/18495-betonozmishuvalna-mashina-kh1-122-104328.html" rel="http://rikato.com.ua/ru/igrushki/18495-betonozmishuvalna-mashina-kh1-122-104328.html">
+                                        <i class="icon-eye-open"></i>
+                                    </a>
+                                </div>
+                                <a class="quick-view" href="http://rikato.com.ua/ru/igrushki/18495-betonozmishuvalna-mashina-kh1-122-104328.html" rel="http://rikato.com.ua/ru/igrushki/18495-betonozmishuvalna-mashina-kh1-122-104328.html">
+                                    <span>Быстрый просмотр</span>
+                                </a>
+                                                                                    <div class="content_price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                                                            <span itemprop="price" class="price product-price  ">
+                                                24,07 грн                                   </span>
+                                            <meta itemprop="priceCurrency" content="UAH">
+                                                                                
+                                            
+                                                                    </div>
+                                                                                                    </div>
+                            
+                            
+                        </div>
+                        <div class="right-block">
+                            <h5 itemprop="name">
+                                                        <a class="product-name" href="http://rikato.com.ua/ru/igrushki/18495-betonozmishuvalna-mashina-kh1-122-104328.html" title="Бетономешалка Х1 " itemprop="url">
+                                    Бетономешалка Х1
+                                </a>
+                            </h5>
+                            <p class="product-desc" itemprop="description">
+                                
+                            </p>
+                                                <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="content_price">
+                                                            <span itemprop="price" class="price product-price ">
+                                        24,07 грн                           </span>
+                                    <meta itemprop="priceCurrency" content="UAH">
+                                                                
+                                    
+                                                    </div>
+                                                
+                            <div class="button-container">
+                                
+                                                                                                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://rikato.com.ua/ru/cart?add=1&amp;id_product=18495&amp;token=1080c18152aa1298b707405aa2de407b" rel="nofollow" title="В корзину" data-id-product="18495">
+                                                <span>В корзину</span>
+                                            </a>
+                                                                                                                    <div class="cart_quantity text-center">
+            <input type="text" data-pack="1" name="qty-18495" class="text cart_quantity_input form-control grey decorate" value="1">
+            
+            <div class="cart_quantity_button clearfix">
+                <a rel="nofollow" data-pack="1" href="#" data-field-qty="qty-18495" data-qty-availiable="1000" class="product_quantity_up btn btn-default button-plus">
+                    <span><i class="icon-plus"></i></span>
+                </a>
+                <a href="#" data-pack="1" rel="nofollow" data-field-qty="qty-18495" class="btn btn-default button-minus product_quantity_down">
+                    <span><i class="icon-minus"></i></span>
+                </a>
+            </div>
+            
+        </div>
+                            </div>
+                                                    <div class="color-list-container hidden"></div>
+                                                <div class="product-flags">
+                                                                                                                                </div>
+                                                                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="availability hidden">
+                                                                            <span class="available-now">
+                                                <link itemprop="availability" href="http://schema.org/InStock">В наличии                                    </span>
+                                                                    </span>
+                                                                    </div>
+                                            <div class="functional-buttons hidden clearfix">
+                                
+        <div class="wishlist">
+            <a class="addToWishlist wishlistProd_18495" href="#" rel="18495" onclick="WishlistCart('wishlist_block_list', 'add', '18495', false, 1); return false;">
+                Добавить в список желаний
+            </a>
+        </div>
+                                                            <div class="compare">
+                                        <a class="add_to_compare" href="http://rikato.com.ua/ru/igrushki/18495-betonozmishuvalna-mashina-kh1-122-104328.html" data-id-product="18495">Добавить к сравнению</a>
+                                    </div>
+                                                    </div>
+                                    </div><!-- .product-container> -->
+                </li>
+                    
+                
+                
+                                        <li class="ajax_block_product column  one  first-in-line last-line last-item-of-tablet-line">
+                    <div class="product-container" itemscope="" itemtype="http://schema.org/Product">
+                        <div class="left-block">
+                            <div class="product-image-container">
+                                <a class="product_img_link" href="http://rikato.com.ua/ru/spectekhnika/18474-vantazhivka-murakha-181-104304.html" title="Грузовик &quot;Муравей&quot;" itemprop="url">
+                                    <img class="replace-2x img-responsive" src="http://rikato.com.ua/4637-home_default/vantazhivka-murakha-181.jpg" alt="ВАНТАЖІВКА Мураха 181" title="ВАНТАЖІВКА Мураха 181" width="250" height="250" itemprop="image">
+                                </a>
+                                                            <div class="quick-view-wrapper-mobile">
+                                    <a class="quick-view-mobile" href="http://rikato.com.ua/ru/spectekhnika/18474-vantazhivka-murakha-181-104304.html" rel="http://rikato.com.ua/ru/spectekhnika/18474-vantazhivka-murakha-181-104304.html">
+                                        <i class="icon-eye-open"></i>
+                                    </a>
+                                </div>
+                                <a class="quick-view" href="http://rikato.com.ua/ru/spectekhnika/18474-vantazhivka-murakha-181-104304.html" rel="http://rikato.com.ua/ru/spectekhnika/18474-vantazhivka-murakha-181-104304.html">
+                                    <span>Быстрый просмотр</span>
+                                </a>
+                                                                                    <div class="content_price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                                                            <span itemprop="price" class="price product-price  ">
+                                                29,97 грн                                   </span>
+                                            <meta itemprop="priceCurrency" content="UAH">
+                                                                                
+                                            
+                                                                    </div>
+                                                                                                    </div>
+                            
+                            
+                        </div>
+                        <div class="right-block">
+                            <h5 itemprop="name">
+                                                        <a class="product-name" href="http://rikato.com.ua/ru/spectekhnika/18474-vantazhivka-murakha-181-104304.html" title="Грузовик &quot;Муравей&quot;" itemprop="url">
+                                    Грузовик "Муравей"
+                                </a>
+                            </h5>
+                            <p class="product-desc" itemprop="description">
+                                
+                            </p>
+                                                <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="content_price">
+                                                            <span itemprop="price" class="price product-price ">
+                                        29,97 грн                           </span>
+                                    <meta itemprop="priceCurrency" content="UAH">
+                                                                
+                                    
+                                                    </div>
+                                                
+                            <div class="button-container">
+                                
+                                                                                                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://rikato.com.ua/ru/cart?add=1&amp;id_product=18474&amp;token=1080c18152aa1298b707405aa2de407b" rel="nofollow" title="В корзину" data-id-product="18474">
+                                                <span>В корзину</span>
+                                            </a>
+                                                                                                                    <div class="cart_quantity text-center">
+            <input type="text" data-pack="1" name="qty-18474" class="text cart_quantity_input form-control grey decorate" value="1">
+            
+            <div class="cart_quantity_button clearfix">
+                <a rel="nofollow" data-pack="1" href="#" data-field-qty="qty-18474" data-qty-availiable="1000" class="product_quantity_up btn btn-default button-plus">
+                    <span><i class="icon-plus"></i></span>
+                </a>
+                <a href="#" data-pack="1" rel="nofollow" data-field-qty="qty-18474" class="btn btn-default button-minus product_quantity_down">
+                    <span><i class="icon-minus"></i></span>
+                </a>
+            </div>
+            
+        </div>
+                            </div>
+                                                    <div class="color-list-container hidden"></div>
+                                                <div class="product-flags">
+                                                                                                                                </div>
+                                                                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="availability hidden">
+                                                                            <span class="available-now">
+                                                <link itemprop="availability" href="http://schema.org/InStock">В наличии                                    </span>
+                                                                    </span>
+                                                                    </div>
+                                            <div class="functional-buttons hidden clearfix">
+                                
+        <div class="wishlist">
+            <a class="addToWishlist wishlistProd_18474" href="#" rel="18474" onclick="WishlistCart('wishlist_block_list', 'add', '18474', false, 1); return false;">
+                Добавить в список желаний
+            </a>
+        </div>
+                                                            <div class="compare">
+                                        <a class="add_to_compare" href="http://rikato.com.ua/ru/spectekhnika/18474-vantazhivka-murakha-181-104304.html" data-id-product="18474">Добавить к сравнению</a>
+                                    </div>
+                                                    </div>
+                                    </div><!-- .product-container> -->
+                </li>
+                    
+                
+                
+                                        <li class="ajax_block_product column  one  last-line first-item-of-tablet-line">
+                    <div class="product-container" itemscope="" itemtype="http://schema.org/Product">
+                        <div class="left-block">
+                            <div class="product-image-container">
+                                <a class="product_img_link" href="http://rikato.com.ua/ru/spectekhnika/18505-musorozbirna-mashina-kh1-405-104343.html" title="Мусоровоз Х1" itemprop="url">
+                                    <img class="replace-2x img-responsive" src="http://rikato.com.ua/4668-home_default/musorozbirna-mashina-kh1-405.jpg" alt="Мусорозбірна машина Х1 405" title="Мусорозбірна машина Х1 405" width="250" height="250" itemprop="image">
+                                </a>
+                                                            <div class="quick-view-wrapper-mobile">
+                                    <a class="quick-view-mobile" href="http://rikato.com.ua/ru/spectekhnika/18505-musorozbirna-mashina-kh1-405-104343.html" rel="http://rikato.com.ua/ru/spectekhnika/18505-musorozbirna-mashina-kh1-405-104343.html">
+                                        <i class="icon-eye-open"></i>
+                                    </a>
+                                </div>
+                                <a class="quick-view" href="http://rikato.com.ua/ru/spectekhnika/18505-musorozbirna-mashina-kh1-405-104343.html" rel="http://rikato.com.ua/ru/spectekhnika/18505-musorozbirna-mashina-kh1-405-104343.html">
+                                    <span>Быстрый просмотр</span>
+                                </a>
+                                                                                    <div class="content_price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                                                            <span itemprop="price" class="price product-price  ">
+                                                29,50 грн                                   </span>
+                                            <meta itemprop="priceCurrency" content="UAH">
+                                                                                
+                                            
+                                                                    </div>
+                                                                                                    </div>
+                            
+                            
+                        </div>
+                        <div class="right-block">
+                            <h5 itemprop="name">
+                                                        <a class="product-name" href="http://rikato.com.ua/ru/spectekhnika/18505-musorozbirna-mashina-kh1-405-104343.html" title="Мусоровоз Х1" itemprop="url">
+                                    Мусоровоз Х1
+                                </a>
+                            </h5>
+                            <p class="product-desc" itemprop="description">
+                                
+                            </p>
+                                                <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="content_price">
+                                                            <span itemprop="price" class="price product-price ">
+                                        29,50 грн                           </span>
+                                    <meta itemprop="priceCurrency" content="UAH">
+                                                                
+                                    
+                                                    </div>
+                                                
+                            <div class="button-container">
+                                
+                                                                                                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://rikato.com.ua/ru/cart?add=1&amp;id_product=18505&amp;token=1080c18152aa1298b707405aa2de407b" rel="nofollow" title="В корзину" data-id-product="18505">
+                                                <span>В корзину</span>
+                                            </a>
+                                                                                                                    <div class="cart_quantity text-center">
+            <input type="text" data-pack="1" name="qty-18505" class="text cart_quantity_input form-control grey decorate" value="1">
+            
+            <div class="cart_quantity_button clearfix">
+                <a rel="nofollow" data-pack="1" href="#" data-field-qty="qty-18505" data-qty-availiable="1000" class="product_quantity_up btn btn-default button-plus">
+                    <span><i class="icon-plus"></i></span>
+                </a>
+                <a href="#" data-pack="1" rel="nofollow" data-field-qty="qty-18505" class="btn btn-default button-minus product_quantity_down">
+                    <span><i class="icon-minus"></i></span>
+                </a>
+            </div>
+            
+        </div>
+                            </div>
+                                                    <div class="color-list-container hidden"></div>
+                                                <div class="product-flags">
+                                                                                                                                </div>
+                                                                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="availability hidden">
+                                                                            <span class="available-now">
+                                                <link itemprop="availability" href="http://schema.org/InStock">В наличии                                    </span>
+                                                                    </span>
+                                                                    </div>
+                                            <div class="functional-buttons hidden clearfix">
+                                
+        <div class="wishlist">
+            <a class="addToWishlist wishlistProd_18505" href="#" rel="18505" onclick="WishlistCart('wishlist_block_list', 'add', '18505', false, 1); return false;">
+                Добавить в список желаний
+            </a>
+        </div>
+                                                            <div class="compare">
+                                        <a class="add_to_compare" href="http://rikato.com.ua/ru/spectekhnika/18505-musorozbirna-mashina-kh1-405-104343.html" data-id-product="18505">Добавить к сравнению</a>
+                                    </div>
+                                                    </div>
+                                    </div><!-- .product-container> -->
+                </li>
+                    
+                
+                
+                                        <li class="ajax_block_product column  one  last-in-line last-line last-item-of-tablet-line">
+                    <div class="product-container" itemscope="" itemtype="http://schema.org/Product">
+                        <div class="left-block">
+                            <div class="product-image-container">
+                                <a class="product_img_link" href="http://rikato.com.ua/ru/spectekhnika/18518-pozhezhna-mashina-kh1-290-104272.html" title="Пожарная машина Х1" itemprop="url">
+                                    <img class="replace-2x img-responsive" src="http://rikato.com.ua/4621-home_default/pozhezhna-mashina-kh1-290.jpg" alt="Пожежна машина Х1 290" title="Пожежна машина Х1 290" width="250" height="250" itemprop="image">
+                                </a>
+                                                            <div class="quick-view-wrapper-mobile">
+                                    <a class="quick-view-mobile" href="http://rikato.com.ua/ru/spectekhnika/18518-pozhezhna-mashina-kh1-290-104272.html" rel="http://rikato.com.ua/ru/spectekhnika/18518-pozhezhna-mashina-kh1-290-104272.html">
+                                        <i class="icon-eye-open"></i>
+                                    </a>
+                                </div>
+                                <a class="quick-view" href="http://rikato.com.ua/ru/spectekhnika/18518-pozhezhna-mashina-kh1-290-104272.html" rel="http://rikato.com.ua/ru/spectekhnika/18518-pozhezhna-mashina-kh1-290-104272.html">
+                                    <span>Быстрый просмотр</span>
+                                </a>
+                                                                                    <div class="content_price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                                                            <span itemprop="price" class="price product-price  ">
+                                                23,61 грн                                   </span>
+                                            <meta itemprop="priceCurrency" content="UAH">
+                                                                                
+                                            
+                                                                    </div>
+                                                                                                    </div>
+                            
+                            
+                        </div>
+                        <div class="right-block">
+                            <h5 itemprop="name">
+                                                        <a class="product-name" href="http://rikato.com.ua/ru/spectekhnika/18518-pozhezhna-mashina-kh1-290-104272.html" title="Пожарная машина Х1" itemprop="url">
+                                    Пожарная машина Х1
+                                </a>
+                            </h5>
+                            <p class="product-desc" itemprop="description">
+                                
+                            </p>
+                                                <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="content_price">
+                                                            <span itemprop="price" class="price product-price ">
+                                        23,61 грн                           </span>
+                                    <meta itemprop="priceCurrency" content="UAH">
+                                                                
+                                    
+                                                    </div>
+                                                
+                            <div class="button-container">
+                                
+                                                                                                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://rikato.com.ua/ru/cart?add=1&amp;id_product=18518&amp;token=1080c18152aa1298b707405aa2de407b" rel="nofollow" title="В корзину" data-id-product="18518">
+                                                <span>В корзину</span>
+                                            </a>
+                                                                                                                    <div class="cart_quantity text-center">
+            <input type="text" data-pack="1" name="qty-18518" class="text cart_quantity_input form-control grey decorate" value="1">
+            
+            <div class="cart_quantity_button clearfix">
+                <a rel="nofollow" data-pack="1" href="#" data-field-qty="qty-18518" data-qty-availiable="1000" class="product_quantity_up btn btn-default button-plus">
+                    <span><i class="icon-plus"></i></span>
+                </a>
+                <a href="#" data-pack="1" rel="nofollow" data-field-qty="qty-18518" class="btn btn-default button-minus product_quantity_down">
+                    <span><i class="icon-minus"></i></span>
+                </a>
+            </div>
+            
+        </div>
+                            </div>
+                                                    <div class="color-list-container hidden"></div>
+                                                <div class="product-flags">
+                                                                                                                                </div>
+                                                                                <span itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="availability hidden">
+                                                                            <span class="available-now">
+                                                <link itemprop="availability" href="http://schema.org/InStock">В наличии                                    </span>
+                                                                    </span>
+                                                                    </div>
+                                            <div class="functional-buttons hidden clearfix">
+                                
+        <div class="wishlist">
+            <a class="addToWishlist wishlistProd_18518" href="#" rel="18518" onclick="WishlistCart('wishlist_block_list', 'add', '18518', false, 1); return false;">
+                Добавить в список желаний
+            </a>
+        </div>
+                                                            <div class="compare">
+                                        <a class="add_to_compare" href="http://rikato.com.ua/ru/spectekhnika/18518-pozhezhna-mashina-kh1-290-104272.html" data-id-product="18518">Добавить к сравнению</a>
+                                    </div>
+                                                    </div>
+                                    </div><!-- .product-container> -->
+                </li>
+                </ul>
+
+
+
+
+
+                    <div class="content_sortPagiBar">
+                        <div class="bottom-pagination-content clearfix">
+                            <!--bogdosarov-->
+                            <div id="pagination_bottom" class="pagination clearfix">
+                                <ul class="pagination">
+                                    
+                                                                                                                            <li class="current">
+                            <span>
+                                <span>1</span>
+                            </span>
+                        </li>
+                                                                                <li>
+                            <a href="http://rikato.com.ua/ru/738-kanctovary#/page-1">
+                                <span>2</span>
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="http://rikato.com.ua/ru/738-kanctovary#/page-1">
+                                <span>3</span>
+                            </a>
+                        </li>
+                                                                        <li class="truncate">
+                        <span>
+                            <span>...</span>
+                        </span>
+                    </li>
+                    <li>
+                        <a href="http://rikato.com.ua/ru/738-kanctovary#/page-1">
+                            <span>144</span>
+                        </a>
+                    </li>
+                    <li id="pagination_next_bottom" class="pagination_next">
+                        <button href="http://rikato.com.ua/ru/738-kanctovary#/page-1" class="btn">
+                            <b>Далее</b> <i class="icon-chevron-right"></i>
+                        </button>
+                    </li>
+                            </ul>
+                    </div>
+
+            
+            <div class="product-count">
+                                                                                    Показ 1 - 12 из 54 товаров
+                    </div>
+            <!-- /Pagination -->
+
+                        </div>
+                    </div>
+                                        </div><!-- #center_column -->
+                                                </div><!-- .row -->
+                        </div><!-- #columns -->
+                    </div>
+
+		<!-- Footer -->
+        <div class="footer-container">
+        	<footer id="footer" class="container">
+        		<div class="row">
+                	<!-- MODULE Block footer -->
+                	<section class=" column one footer-block col-xs-12 col-sm-2" id="block_various_links_footer">
+                		<h4>Rikato</h4>
+                		<ul class="toggle-footer" style="">
+        					<li class="item">
+        						<a href="http://nosorog.dev.stfalcon.com/ru/content/4-about-us" title="О компании">
+        							О компании
+        						</a>
+        					</li>
+        					<li class="item">
+        						<a href="http://nosorog.dev.stfalcon.com/ru/content/6-nashi-preimusshestva" title="Наши преимущества">
+        							Наши преимущества
+        						</a>
+        					</li>
+        					<li class="item">
+        						<a href="http://nosorog.dev.stfalcon.com/ru/content/7-vakansii" title="Вакансии">
+        							Вакансии
+        						</a>
+        					</li>
+        					<li class="item">
+        						<a href="http://nosorog.dev.stfalcon.com/ru/content/8-nashi-druzya" title="Наши друзья">
+        							Наши друзья
+        						</a>
+        					</li>
+        				</ul>
+                    </section>
+                	<!-- /MODULE Block footer -->
+                    <section class="column one footer-block col-xs-12 col-sm-4">
+                        <h4>Помощь</h4>
+                        <div class="block_content toggle-footer" style="">
+                            <ul class="bullet">
+                                <li><a rel="nofollow" title="FAQ" href="http://nosorog.dev.stfalcon.com/ru/content/11-faq">FAQ</a></li>
+                                <li><a rel="nofollow" title="Доставка и возврат" href="http://nosorog.dev.stfalcon.com/ru/content/12-dostavka-i-vozvrat">Доставка и возврат</a></li>
+                                <li><a rel="nofollow" title="Бизнес сотрудничество" href="http://nosorog.dev.stfalcon.com/ru/content/13-biznes-sotrudnichestvo">Бизнес сотрудничество</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <div class="column one shop-phone">
+                        <h4>Контакты</h4>
+                        <a href="callto:0971771770">(097) 177-17-70</a>
+                        <a href="callto:0673805875">(067) 380-58-75</a>
+                        <a href="callto:0505181683">(050) 518-16-83</a>
+                        <a href="callto:0631780610">(063) 178-06-10</a>
+                        <a class="contact-link" href="mailto:smile@rikato.com.ua">smile@rikato.com.ua</a>
+                    </div>
+                    <section id="social_block" class="column one">
+                    	<ul>
+                            <!-- bogdosarov add $vk_url -->
+        					<li class="facebook">
+                				<a target="_blank" href="http://www.facebook.com/prestashop">
+                				</a>
+                			</li>
+        					<li class="twitter">
+                				<a target="_blank" href="http://www.twitter.com/prestashop">
+                				</a>
+                			</li>
+        		            <li class="google-plus">
+                        		<a target="_blank" href="https://www.google.com/+prestashop">
+                        		</a>
+                        	</li>
+                            <li class="vk">
+                                <a target="_blank" href="http://vk.com/">
+                                </a>
+                            </li>
+        	           </ul>
+                        <div class="copyright clearfix">
+                            © Интернет-магазин <br>
+                            Rikato 2015
+                        </div>
+                    </section>
+
+                </div>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

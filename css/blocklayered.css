@@ -1,0 +1,389 @@
+#enabled_filters {
+    margin-bottom: 20px;
+}
+
+#enabled_filters .subtitle {
+    font-size: 14px;
+    color: #333;
+}
+
+#enabled_filters .layered_subtitle {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#enabled_filters ul li {
+    margin-bottom: 1px;
+    color: #a5509f;
+}
+
+#enabled_filters .filter-link {
+    margin: 4px 0 0;
+    display: inline-block;
+    color: #a5509f;
+}
+
+#enabled_filters li a {
+    cursor: pointer;
+}
+
+#enabled_filters .icon-remove {
+    display: inline-block;
+    margin-right: 2px;
+    width: 8px;
+    height: 9px;
+    background: url(img/icon-remove.png) -1px -1px no-repeat;
+}
+
+#enabled_filters .icon-remove:before {
+    display: none;
+}
+
+.layered_price input {
+    width: 57px;
+}
+
+.layered_price .btn {
+    margin-left: 8px;
+    vertical-align: top;
+}
+
+.layered_price label {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 6px;
+}
+
+.layered_price label:first-child {
+    margin-left: 0;
+}
+
+.layered_price .layered_subtitle_heading {
+    margin-bottom: 23px;
+}
+
+.slider-input-bloks {
+    margin-top: 18px;
+    white-space: nowrap;
+}
+
+
+#layered_block_left .layered_close {
+    float: right;
+    padding-right: 5px;
+}
+
+#layered_block_left span.layered_close a,
+#layered_block_left span.layered_close a {
+    display: block;
+    height: 13px;
+    width: 13px;
+    text-decoration: none;
+    text-indent: -5000px;
+    background: url(img/icon/less.gif) no-repeat 2px 2px;
+}
+
+#layered_block_left span.closed a {
+    background: url(img/icon/more.gif) no-repeat 2px 2px;
+}
+
+#layered_block_left .layered_subtitle {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#layered_block_left ul {
+    clear: both;
+    padding: 5px 0;
+}
+
+#layered_block_left ul li {
+
+}
+
+#layered_block_left ul li label {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#layered_block_left ul .checked + label a {
+    color: #c19a6b;
+    font-weight: bold;
+}
+
+#layered_block_left ul .checked label .count {
+    font-weight: normal;
+}
+
+#layered_block_left ul {
+    padding-left: 0;
+}
+
+#layered_block_left ul li {
+    list-style-type: none;
+}
+
+#layered_block_left #enabled_filters, #layered_url_filter_block {
+
+}
+
+#layered_block_left #enabled_filters ul li {
+
+}
+
+/* Style moved form the template to the css  */
+#layered_block_left #enabled_filters ul li:hover {
+}
+
+#layered_block_left ul li input.checkbox {
+
+}
+
+#layered_block_left ul li .disabled {
+    color: #666;
+}
+
+#layered_block_left .color-option {
+    border: 0px solid transparent;
+}
+
+#layered_block_left .color-option.disable {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+}
+
+#layered_block_left .nomargin a {
+    display: inline;
+    vertical-align: middle;
+    color: #333;
+}
+
+#layered_form {
+    position: relative;
+    padding-top: 3px;
+}
+
+#layered_form .select {
+    width: 165px;
+}
+
+#layered_form .color-option {
+    width: 30px;
+    height: 30px;
+}
+
+#layered_form div .color-group {
+    overflow: visible;
+    margin: 7px -3px 0 -3px;
+}
+.color-group:after {
+    content:"";
+    display: table;
+    width: 100%;
+    clear:both;
+}
+
+
+.color-group li {
+    float: left;
+    margin: 0 4px 4px 0;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    padding: 1px;
+    border: 2px solid transparent;
+}
+
+.color-group li input:focus {
+    outline:none;
+}
+
+.layered_color {
+    display: none;
+}
+
+#layered_form .color-option.border {
+    border: solid 2px #e0e2e2;
+}
+
+#layered_form .color-group li.on {
+    border:2px solid #a5509f;
+}
+
+#layered_form input[type=radio] {
+    margin-left: 2px;
+    vertical-align: middle;
+}
+
+.layered_price_range {
+    margin-left: 7px;
+}
+
+.layered_price_range_unit {
+    margin-right: 7px;
+}
+
+.layered_slider_container {
+    padding: 0 10px;
+    width: 235px;
+}
+
+.layered_slider {
+    margin-top: 5px;
+}
+
+.layered_input_range_min {
+    width: 30px;
+}
+
+.layered_input_range_max {
+    width: 40px;
+}
+
+.layered_list_selected {
+    font-weight: bold;
+}
+
+.layered_list {
+    display: block;
+    cursor: pointer;
+}
+
+.layered_list:hover {
+    font-weight: bold;
+}
+
+.layered_ajax_loader p {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.hide-action {
+    text-align: center;
+    text-align: right;
+    display: block;
+    cursor: pointer;
+}
+
+.hide-action:hover {
+    font-weight: bold;
+}
+
+#layered_form div div ul {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.layered_filter {
+    margin-bottom: 16px;
+}
+
+.layered_filter .count {
+    color: #aaa;
+}
+
+.layered_filter label {
+    font-weight: normal;
+    margin: 0;
+}
+
+.layered_price {
+    margin-bottom: 24px;
+}
+
+.layered_subtitle_heading {
+    margin-bottom: 7px;
+}
+
+/*
+filter submit btn
+*/
+.filter-submit-wr {
+    display: none;
+    /*opacity:0;*/
+    position: absolute;
+    right: 0;
+    top: 10px;
+    z-index: 11;
+}
+
+.filter-submit-wr .wr{
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 2px solid #a5509f;
+    background: #fff;
+    width: 284px;
+}
+
+.filter-submit-wr .wr:before,
+.filter-submit-wr .wr:after {
+    content:"";
+    display: block;
+    position: absolute;
+    top: 50%;
+    border-style: solid;
+    border-color: transparent;
+}
+.filter-submit-wr .wr:before{
+    border-width: 7px;
+    border-right-color: #a5509f;
+    margin-top: -7px;
+    left: -14px;
+}
+.filter-submit-wr .wr:after{
+    border-width: 6px;
+    border-right-color: #fff;
+    margin-top: -6px;
+    left: -11px;
+}
+
+.filter-submit-wr p {
+    float: left;
+    padding: 0 12px;
+    width: 180px;
+    height: 36px;
+    line-height: 36px;
+    color: #2c373c;
+    font-size: 16px;
+    margin: 0;
+    white-space: nowrap;
+}
+.filter-submit-wr button {
+    float: left;
+    height: 38px;
+    width: 102px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    background: #a5509f;
+    border: none;
+    border-bottom: 2px solid #7c3c77;
+    margin:0 -2px -2px 0;
+}
+
+.filter-submit-wr button:focus {
+    outline:none;
+}
+
+#layered_form li {
+    position: relative;
+    overflow: hidden;
+}
+#layered_form .checker span {
+    position: static;
+}
+#layered_form .checker span span {
+    vertical-align: top;
+}
+#layered_form .checker input {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 235px;
+    height: 23px;
+    margin: 0;
+}
