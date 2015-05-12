@@ -65,6 +65,12 @@
 		+s(ico-delete)
 	&.ico_card
 		+s(ico-card)
+	&.ico_f
+		+s(ico-f)
+	&.ico_vk
+		+s(ico-vk)
+	&.ico_user
+		+s(ico-user)
 
 // common blocks      
 
@@ -403,10 +409,79 @@
 		&.is-pink
 			background: #ffdbe5
 
+// soc-links
+.soc-links
+	a
+		color: #2290CF
+	p
+		margin-bottom: 2px
+	.soc-links__title
+		margin-bottom: 23px
+		color: #333
+		font-size: 24px
+		font-weight: 700
+	.soc-links__row
+		position: relative
+		margin-top: 20px
+		padding-left: 58px
+		.ico 
+			position: absolute
+			left: 0
+			top: 2px
 
-
-
-
+// user
+.user
+	position: relative
+	margin-top: -10px
+	color: #333
+	font-size: 16px
+	font-weight: 400
+	vertical-align: top
+	display: inline-block
+	&:hover
+		&:before
+			+s(arrow-user-hov)
+		.user__drop
+			display: block
+		.ico
+			+s(ico-user-hov)
+		.user__name
+			color: #fff
+			background: #bf9f79
+			+box-shadow(inset 0 2px 0 rgba(0, 0, 0, 0.15))
+	&:before
+		position: absolute
+		content: ''
+		top: 17px
+		right: 15px
+		+s(arrow-user)
+	a
+		&:hover
+			color: #bf9f79
+	.user__name
+		height: 40px
+		padding: 0 28px 0 15px
+		line-height: 40px
+		display: block
+	.user__drop
+		position: absolute
+		left: 0
+		right: 0
+		top: 100%
+		padding: 18px 15px 22px
+		border: 2px solid #bf9f79
+		background: #fff
+		z-index: 10
+		display: none
+	.user__row
+		margin-top: 12px
+		&:first-child
+			margin-top: 0
+		span
+			color: #999
+	.ico
+		margin-right: 10px
+		vertical-align: middle
 
 
 
