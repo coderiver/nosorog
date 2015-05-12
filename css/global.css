@@ -9058,7 +9058,7 @@ label div.checker {
 .fancybox-skin .fancybox-close {
     top: -38px;
     right: 0;
-    padding: 7px 39px 0 20px;
+    padding: 9px 39px 0 20px;
     height: 38px;
     width: auto;
 }
@@ -9962,7 +9962,7 @@ div.checker.disabled.checked span, div.checker.disabled.active.checked span {
 
 .fancybox-skin .fancybox-close {
     content: "Закрыть";
-    background: url(../img/icon/icon-close.png) no-repeat 86px 14px #a5509f;
+    background: url(../img/icon/icon-close.png) no-repeat 86px 14px #bf9f79;
     color: #fff;
     font-weight: bold;
 }
