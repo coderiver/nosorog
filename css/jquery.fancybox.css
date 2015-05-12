@@ -34,7 +34,25 @@
 	   -moz-border-radius: 4px;
 	        border-radius: 4px;
 }
-
+.fancybox-skin .two {
+	width: 450px;
+}
+.fancybox-skin #image-block {
+	width: 350px;
+	height: 350px;
+}
+.fancybox-skin .pb-center-column {
+	padding-bottom: 0;
+} 
+a.fancybox.shown {
+	border: 2px solid #c19a6b;
+	display: inline-block;
+}
+.fancybox-skin .column-row, .row,
+.fancybox-skin #thumbs_list,
+.fancybox-skin .primary_block {
+	margin-bottom: 0;
+}
 .fancybox-opened {
 	z-index: 8030;
 }
@@ -51,7 +69,7 @@
 
 .fancybox-inner {
 	overflow: hidden;
-	max-height: 460px !important;
+	max-height: 760px !important;
 }
 
 .fancybox-type-iframe .fancybox-inner {
