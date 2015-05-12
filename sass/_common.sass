@@ -320,13 +320,38 @@
 	font-size: 18px
 	font-weight: 700
 
+// add-rec
+.add-rec
+	margin-left: 5px
+	color: #2290CF
+	font-family: "PT Sans"
+	font-size: 16px
+	font-weight: 400
 
 
-
-
-
-
-
+// comment
+.comment
+	margin-bottom: 28px
+	.comment__top
+	.comment__user
+		color: #333
+		font-size: 16px
+		font-weight: 700
+	.comment__user,
+	.date
+		vertical-align: top
+		display: inline-block
+	.comment__text
+		position: relative
+		margin-top: 10px
+		padding: 15px 20px
+		background: #eeeeee
+		&:before
+			position: absolute
+			content: ''
+			top: -10px
+			left: 131px
+			+arr(10,16,#eeeeee,bl)
 
 
 

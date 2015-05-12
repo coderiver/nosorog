@@ -79,6 +79,14 @@
 
 .title-h4 { margin-bottom: 15px; color: #333333; font-size: 18px; font-weight: 700; }
 
+.add-rec { margin-left: 5px; color: #2290cf; font-family: "PT Sans"; font-size: 16px; font-weight: 400; }
+
+.comment { margin-bottom: 28px; }
+.comment .comment__user { color: #333333; font-size: 16px; font-weight: 700; }
+.comment .comment__user, .comment .date { vertical-align: top; display: inline-block; }
+.comment .comment__text { position: relative; margin-top: 10px; padding: 15px 20px; background: #eeeeee; }
+.comment .comment__text:before { position: absolute; content: ""; top: -10px; left: 131px; width: 0px; height: 0px; border-style: solid; border-width: 10px 0 0 16px; border-color: transparent transparent transparent #eeeeee; }
+
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 
 .slick-list { position: relative; overflow: hidden; display: block; margin: 0; padding: 0; }

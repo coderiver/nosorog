@@ -1027,7 +1027,7 @@ form .submit:last-child {
 
 .form a,
 form a {
-    color: #a5a737;
+    color: #2290CF;
 }
 
 /*
@@ -7907,8 +7907,8 @@ div.star a:hover {
     overflow: hidden;
     width: 100%;
     font-size: 13px;
-    color: #fff;
-    background: #2290cf;
+    color: #333;
+    background: #c8e5f6;
     text-align: center;
 }
 
