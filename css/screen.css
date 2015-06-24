@@ -163,6 +163,68 @@
 
 .back { color: #2290cf; font-weight: 700; }
 
+.c-anceta { font-size: 16px; font-weight: bold; *zoom: 1; }
+.c-anceta:after { content: " "; display: table; clear: both; }
+.c-anceta .c-anceta__wrap { overflow: hidden; }
+.c-anceta .c-anceta__img { float: left; margin-right: 10px; width: 150px; }
+.c-anceta .c-anceta__img img { display: block; }
+.c-anceta .c-anceta__text { padding: 20px 0; line-height: 1.8; }
+.c-anceta .page-heading { margin-bottom: 0; }
+.c-anceta .c-anceta__foot { font-size: 0; }
+.c-anceta .c-anceta__foot .btn { margin-left: 20px; }
+.c-anceta .c-anceta__foot .btn:first-child { margin-left: 0; }
+
+.discount { padding: 0 10px 0 21px; min-width: 120px; color: white; }
+.discount:before { top: -10px; height: 40px; background: url(../img/ico-discount.png) no-repeat 0 0; }
+
+.certificate { padding: 0 22px 0; min-width: 105px; }
+.certificate:before { top: -5px; height: 35px; background: url(../img/ico-certificate.png) no-repeat 0 0; }
+
+.discount, .certificate { position: relative; line-height: 1.4; display: inline-block; }
+.discount:before, .certificate:before { position: absolute; content: ""; left: 0; right: 0; background-size: 100% 100%; }
+.discount span, .certificate span { position: relative; z-index: 1; line-height: 1.4; }
+
+.copyright.copyright_center { text-align: center; }
+
+.column.column_mod { width: 100%; }
+
+.anketa { border: 1px solid #e0e2e2; }
+.anketa .anketa__row { position: relative; padding: 20px 18px 50px; font-size: 0; border-top: 1px solid #e0e2e2; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.anketa .anketa__row:first-child { border-top: 0; }
+.anketa .anketa__col { padding: 10px 0 0 10px; width: 50%; font-size: 14px; vertical-align: top; display: inline-block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.anketa .anketa__col:first-child { padding: 10px 10px 0 0; }
+.anketa .anketa__col.anketa__col_hide { display: none; }
+.anketa .anketa__col.is-active { display: inline-block; }
+.anketa .anketa__img { float: left; padding-top: 8px; width: 180px; }
+.anketa .anketa__img img { position: relative; left: 50%; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); }
+.anketa .anketa__form { overflow: hidden; }
+.anketa .anketa__top { font-size: 0; }
+.anketa .anketa__but { padding-right: 17px; font-size: 14px; vertical-align: top; display: inline-block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.anketa .anketa__field { margin-top: 4px; }
+.anketa .anketa__wr span { margin: 0 5.5px; line-height: 2.4; vertical-align: top; display: inline-block; }
+.anketa .anketa__wr span:first-child { margin-left: 0; }
+.anketa .anketa__wr input { vertical-align: top; display: inline-block; }
+.anketa .anketa__title { font-size: 16px; font-weight: normal; }
+.anketa .anketa__add { margin-top: 15px; }
+.anketa .form-group { padding: 0; margin: 0; }
+.anketa .form-group .selector { margin-left: 8px; vertical-align: top; display: inline-block; }
+.anketa .form-group .selector:first-child { margin-left: 0; }
+
+.radiob { position: relative; margin: 5px 0 0 0; cursor: pointer; line-height: 1.5; -moz-user-select: -moz-none; -ms-user-select: none; -webkit-user-select: none; user-select: none; display: block; }
+.radiob:first-child { margin-top: 0; }
+.radiob input { position: absolute; top: 3px; left: 0; }
+.radiob input { z-index: 2; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
+
+.discount-blue { position: absolute; left: 50%; top: -36px; -moz-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); -webkit-transform: translate(-50%, 0); transform: translate(-50%, 0); height: 70px; width: 70px; line-height: 70px; text-align: center; color: white; font-size: 18px; font-weight: bold; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; background: url(../img/discount-blue.png) no-repeat 0 0; background-size: cover; }
+
+.discount-all { padding-top: 25px; text-align: center; }
+.discount-all .discount-all__title { margin-bottom: 10px; font-size: 24px; font-weight: bold; }
+.discount-all .discount-all__title span { color: #2290cf; }
+.discount-all .checker label { font-weight: normal; color: #333333; }
+.discount-all .checker span { margin-top: -3px; }
+.discount-all label { margin-bottom: 0; }
+.discount-all .btn { margin-top: 25px; }
+
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 
 .slick-list { position: relative; overflow: hidden; display: block; margin: 0; padding: 0; }

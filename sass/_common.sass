@@ -589,10 +589,199 @@
 	color: #2290CF
 	font-weight: 700
 
+.c-anceta
+	font-size: 16px
+	font-weight: bold
+	+clr
+	.c-anceta__wrap
+		overflow: hidden
+	.c-anceta__img
+		float: left
+		margin-right: 10px
+		width: 150px
+		img
+			display: block
+	.c-anceta__text
+		padding: 20px 0
+		line-height: 1.8
+	.page-heading
+		margin-bottom: 0
+	.c-anceta__foot
+		font-size: 0
+		.btn
+			margin-left: 20px
+			&:first-child
+				margin-left: 0
 
+// discount
+.discount
+	padding: 0 10px 0 21px
+	min-width: 120px
+	color: #fff
+	&:before
+		top: -10px
+		height: 40px
+		background: url(../img/ico-discount.png) no-repeat 0 0
 
+// certificate
+.certificate
+	padding: 0 22px 0
+	min-width: 105px
+	&:before
+		top: -5px
+		height: 35px
+		background: url(../img/ico-certificate.png) no-repeat 0 0
 
+// discount, certificate
+.discount,
+.certificate
+	position: relative
+	line-height: 1.4
+	display: inline-block
+	&:before
+		position: absolute
+		content: ''
+		left: 0
+		right: 0
+		background-size: 100% 100%
+	span
+		position: relative
+		z-index: 1
+		line-height: 1.4
 
+// copyright
+.copyright
+	&.copyright_center
+		text-align: center
+.column
+	&.column_mod
+		width: 100%
+
+// anketa
+.anketa
+	border: 1px solid #e0e2e2
+	.anketa__row
+		position: relative
+		padding: 20px 18px 50px
+		font-size: 0
+		border-top: 1px solid #e0e2e2
+		+box
+		&:first-child
+			border-top: 0
+	.anketa__col
+		padding: 10px 0 0 10px
+		width: 50%
+		font-size: 14px
+		vertical-align: top
+		display: inline-block
+		+box
+		&:first-child
+			padding: 10px 10px 0 0
+		&.anketa__col_hide
+			display: none
+		&.is-active
+			display: inline-block
+	.anketa__img
+		float: left
+		padding-top: 8px
+		width: 180px
+		img
+			position: relative
+			left: 50%
+			+translate(-50%,0)
+	.anketa__form
+		overflow: hidden
+	.anketa__top
+		font-size: 0
+	.anketa__but
+		padding-right: 17px
+		font-size: 14px
+		vertical-align: top
+		display: inline-block
+		+box
+	.anketa__field
+		margin-top: 4px
+	.anketa__wr
+		span
+			margin: 0 5.5px
+			line-height: 2.4
+			vertical-align: top
+			display: inline-block
+			&:first-child
+				margin-left: 0
+		input
+			vertical-align: top
+			display: inline-block
+	.anketa__title
+		font-size: 16px
+		font-weight: normal
+	.anketa__add
+		margin-top: 15px
+	.form-group
+		padding: 0
+		margin: 0
+		.selector
+			margin-left: 8px
+			vertical-align: top
+			display: inline-block
+			&:first-child
+				margin-left: 0
+
+// radiob
+.radiob
+	position: relative
+	margin: 5px 0 0 0
+	cursor: pointer
+	line-height: 1.5
+	+user-select(none)
+	display: block
+	&:first-child
+		margin-top: 0
+	input
+		position: absolute
+		top: 3px
+		left: 0
+	input
+		z-index: 2
+		+opacity(0)
+
+// discount-blue
+.discount-blue
+	position: absolute
+	left: 50%
+	top: -36px
+	+translate(-50%,0)
+	height: 70px
+	width: 70px
+	line-height: 70px
+	text-align: center
+	color: #fff
+	font-size: 18px
+	font-weight: bold
+	+font-smoothing(antialiased)
+	background: url(../img/discount-blue.png) no-repeat 0 0
+	background-size: cover
+
+// discount-all
+.discount-all
+	padding-top: 25px
+	text-align: center
+	.discount-all__title
+		margin-bottom: 10px
+		font-size: 24px
+		font-weight: bold
+		span
+			color: #2290cf
+	.checker
+		label
+			font-weight: normal
+			color: #333333
+		span
+			margin-top: -3px
+	label
+		margin-bottom: 0
+	.btn
+		margin-top: 25px
 
 
 

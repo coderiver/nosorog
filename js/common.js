@@ -27,4 +27,8 @@ $(document).ready(function(){
 		slidesToShow: 4,
 		slidesToScroll: 1
 	});
+	$('.js-add-anketa').on('click', function() {
+		$('.js-anketa-col').toggleClass('is-active');
+		return false;
+	});
 });
